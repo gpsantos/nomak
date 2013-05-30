@@ -30,14 +30,19 @@ div#basicInfo {
     float: left;
     left: 15%;
     position: relative;
+<<<<<<< Updated upstream
     top: 50px;
+=======
+    top: 60px;
+>>>>>>> Stashed changes
 }
 
-div.bottom input, div.bottom textarea {
+.bottom input, div.bottom textarea {
     float:right;
     width:70%
 }
 
+<<<<<<< Updated upstream
 div.bottom{ 
     padding:4%; 
 }
@@ -47,4 +52,11 @@ div#matSuggest {
     left: 15%;
     position: relative;
     top: 50px;
+=======
+.bottom {
+    padding: 6% 6% 12%;
+}
+.bottom ul {
+    margin: 5px 0 10px;
+>>>>>>> Stashed changes
 }
