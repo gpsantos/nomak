@@ -30,7 +30,7 @@ div#basicInfo {
     float: left;
     left: 15%;
     position: relative;
-    top: 50%;
+    top: 50px;
 }
 
 div.bottom input, div.bottom textarea {
@@ -40,4 +40,11 @@ div.bottom input, div.bottom textarea {
 
 div.bottom{ 
     padding:4%; 
+}
+div#matSuggest {
+    border:1px solid #DBD8D3;
+    float: left;
+    left: 15%;
+    position: relative;
+    top: 50px;
 }
