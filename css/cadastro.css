@@ -20,7 +20,6 @@ div.top {
     background-color: #4F6525;
     padding: 1%;
 }
-<<<<<<< HEAD
 div.boxes {
     border: 1px solid #DBD8D3;
     max-width: 323px;
@@ -39,18 +38,6 @@ div.boxes {
 }
 footer {
     clear: both;
-=======
-
-div#basicInfo {
-    border:1px solid #DBD8D3;
-    float: left;
-    left: 15%;
-    position: relative;
-<<<<<<< Updated upstream
-    top: 50px;
-=======
-    top: 60px;
->>>>>>> Stashed changes
 }
 
 .bottom input, div.bottom textarea {
@@ -58,30 +45,20 @@ div#basicInfo {
     width:70%
 }
 
-<<<<<<< Updated upstream
 div.bottom{ 
     padding:4%; 
->>>>>>> f559579671aa55463501572543fa929782a79fd5
 }
 div#leftColumn {
     float: left;
-<<<<<<< HEAD
     padding: 6% 0 0 20%;
 }
 div#rightColumn {
     float: right;
     padding: 6% 20% 0 0;
 }
-=======
-    left: 15%;
-    position: relative;
-    top: 50px;
-=======
 .bottom {
     padding: 6% 6% 12%;
 }
 .bottom ul {
     margin: 5px 0 10px;
->>>>>>> Stashed changes
 }
->>>>>>> f559579671aa55463501572543fa929782a79fd5
