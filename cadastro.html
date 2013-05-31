@@ -15,6 +15,7 @@
 			 <img id="logo" src="img/k.jpg" alt="" /> 
 			 <img id="mountain" src="img/mountain.jpg" /> 
 		</div>
+		
 		<div id="campos">
           <div id="basicInfo">
             <div class="top">
@@ -26,25 +27,51 @@
     			   <ul><label for="descricao">Descrição:</label><textarea name="descricao"></textarea></ul>
     		  </div>
           </div>
+		  
 		  <div id="matSuggest">
             <div class="top">
               <img alt="icon" />
               <p>Material Sugerido</p>
             </div>
     		  <div class="bottom">
-    		  	   <ul><label for="nome">Quantidade: </label> <input type="text" name="nome"/></ul>
+    		  	   <ul><label for="nome">Quantidade: <select name="" size="1"> <option selected value=""></option></select></ul>
     			   <ul><label for="descricao">Nome: </label> <input type="text" name="nome"/></ul>
     		  </div>
           </div>
+		  
+		  <div id="matSuggest">
+            <div class="top">
+              <img alt="icon" />
+              <p>Material Sugerido</p>
+            </div>
+    		  <div class="bottom">
+    		  	   <ul><label for="nome">Grau geral da via </label> <div><input type="range" id="grauGeral" name="grauGeral" min="0" value="0" max="11"> <label id="grauGeralValue">7º</label></div> </ul>
+    			   <ul><label for="descricao">Grau do crux </label> <div><input type="range" id="grauCrux" name="grauCrux" min="0" value="0" max="27"> <label id="grauCruxValue">VIsup</label></div></ul>
+				   <ul><label for="descricao">Grau do artificial </label> <div><td><input type="range" id="grauArtificial" name="grauArtificial" min="0" value="0" max="10"> <label id="grauArtificialValue">A4+</label></td></div></ul>
+				   <ul><label for="descricao">Artificial em Livre </label> <div><td><input type="range" id="grauArtificialLivre" name="grauArtificialLivre" min="0" value="0" max="27"> <label id="grauArtificialLivreValue">Xa</label></td></div></ul>
+				   <ul><label for="descricao">Grau de exposição </label> <div><td><input type="range" id="grauExposicao" name="grauExposicao" min="0" value="0" max="8"> <span id="grauExposicaoDescription" title="Vias muito perigosas, com consequências graves em caso de queda" style="text-decoration: underline;"><label id="grauExposicaoValue">E5</label></span></td></div></ul>
+				   <ul><label for="descricao">Grau de duração </label> <div><input type="range" id="grauCrux" name="grauCrux" min="0" value="0" max="27"> <label id="grauCruxValue">VIsup</label></div></ul>
+    		  </div>
+          </div>
+		  
+		<div id="matSuggest">
+            <div class="top">
+              <img alt="icon" />
+              <p></p>
+            </div>
+    		  <div class="bottom">
+			  	   <ul><label for="descricao">Conquistadores: </label> <input type="text" name="nome"/></ul>
+    		  	   <ul><label for="nome">Ano da conquista: <select name="" size="1"> <option selected value=""></option></select></ul>
+    			   <ul><label for="descricao">Clube: </label> <input type="text" name="nome"/></ul>
+    		  </div>
+          </div>
+		
+		  
+		  
 		</div>
 		
-		
-  <footer>
-  <p>Posted by: Margareth E Guilherme Santos</p>
-  <p><time pubdate datetime="2012-03-01"></time></p>
-</footer>
-
   </body>
+
 </html>
 
  
