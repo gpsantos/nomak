@@ -16,8 +16,8 @@
 			 <img id="mountain" src="img/mountain.jpg" /> 
 		</div>
 		
-		<div id="campos">
-          <div id="basicInfo">
+		<div id="leftColumn">
+          <div id="basicInfo" class="boxes">
             <div class="top">
               <img alt="icon" />
               <p>Informações Básicas</p>
@@ -27,22 +27,10 @@
     			   <ul><label for="descricao">Descrição:</label><textarea name="descricao"></textarea></ul>
     		  </div>
           </div>
-		  
-		  <div id="matSuggest">
+		  <div id="graduacao" class="boxes">
             <div class="top">
               <img alt="icon" />
-              <p>Material Sugerido</p>
-            </div>
-    		  <div class="bottom">
-    		  	   <ul><label for="nome">Quantidade: <select name="" size="1"> <option selected value=""></option></select></ul>
-    			   <ul><label for="descricao">Nome: </label> <input type="text" name="nome"/></ul>
-    		  </div>
-          </div>
-		  
-		  <div id="matSuggest">
-            <div class="top">
-              <img alt="icon" />
-              <p>Material Sugerido</p>
+              <p>Graduação</p>
             </div>
     		  <div class="bottom">
     		  	   <ul><label for="nome">Grau geral da via </label> <div><input type="range" id="grauGeral" name="grauGeral" min="0" value="0" max="11"> <label id="grauGeralValue">7º</label></div> </ul>
@@ -53,11 +41,22 @@
 				   <ul><label for="descricao">Grau de duração </label> <div><input type="range" id="grauCrux" name="grauCrux" min="0" value="0" max="27"> <label id="grauCruxValue">VIsup</label></div></ul>
     		  </div>
           </div>
-		  
-		<div id="matSuggest">
+        </div>
+		<div id="rightColumn">  
+		  <div id="matSuggest" class="boxes">
             <div class="top">
               <img alt="icon" />
-              <p></p>
+              <p>Material Sugerido</p>
+            </div>
+    		  <div class="bottom">
+    		  	   <ul><label for="nome">Quantidade: <select name="" size="1"> <option selected value=""></option></select></ul>
+    			   <ul><label for="descricao">Nome: </label> <input type="text" name="nome"/></ul>
+    		  </div>
+          </div>
+		<div id="conquista" class="boxes">
+            <div class="top">
+              <img alt="icon" />
+              <p>Conquista</p>
             </div>
     		  <div class="bottom">
 			  	   <ul><label for="descricao">Conquistadores: </label> <input type="text" name="nome"/></ul>
@@ -65,10 +64,8 @@
     			   <ul><label for="descricao">Clube: </label> <input type="text" name="nome"/></ul>
     		  </div>
           </div>
-		
+	   </div>
 		  
-		  
-		</div>
 		
   </body>
 
