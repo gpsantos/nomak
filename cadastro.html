@@ -3,9 +3,17 @@
   <head>
     <meta charset="utf-8">
 	<title>Kamon! Cadastro</title>
-	
+	<link href="css/smoothness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/cadastro.css">
+	<link rel="stylesheet" type="text/css" href="css/spinner.css">
+	<script src="js/jquery-1.9.1.js"></script>
+ 	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+	<script type="text/javascript">
+	$(function(){
+			$(".spinner").spinner({width:100});
+			});
+	</script>
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->	
@@ -20,50 +28,89 @@
           <div id="basicInfo" class="boxes">
             <div class="top">
               <img alt="icon" />
-              <p>Informações Básicas</p>
+              <p class="tituloBox">Informações Básicas</p>
             </div>
     		  <div class="bottom">
-    		  	   <ul><label for="nome">Nome:</label> <input type="text" name="nome"/></ul>
-    			   <ul><label for="descricao">Descrição:</label><textarea name="descricao"></textarea></ul>
+    		  	   <ul><p class="textoBox">Nome: <input type="text" name="nome"/></p></ul>
+    			   <ul><p class="textoBox">Descrição:<textarea name="descricao"></textarea></p></ul>
     		  </div>
           </div>
 		  <div id="graduacao" class="boxes">
             <div class="top">
               <img alt="icon" />
-              <p>Graduação</p>
+              <p class="tituloBox">Graduação</p>
             </div>
     		  <div class="bottom">
-    		  	   <ul><label for="nome">Grau geral da via </label> <div><input type="range" id="grauGeral" name="grauGeral" min="0" value="0" max="11"> <label id="grauGeralValue">7º</label></div> </ul>
-    			   <ul><label for="descricao">Grau do crux </label> <div><input type="range" id="grauCrux" name="grauCrux" min="0" value="0" max="27"> <label id="grauCruxValue">VIsup</label></div></ul>
-				   <ul><label for="descricao">Grau do artificial </label> <div><td><input type="range" id="grauArtificial" name="grauArtificial" min="0" value="0" max="10"> <label id="grauArtificialValue">A4+</label></td></div></ul>
-				   <ul><label for="descricao">Artificial em Livre </label> <div><td><input type="range" id="grauArtificialLivre" name="grauArtificialLivre" min="0" value="0" max="27"> <label id="grauArtificialLivreValue">Xa</label></td></div></ul>
-				   <ul><label for="descricao">Grau de exposição </label> <div><td><input type="range" id="grauExposicao" name="grauExposicao" min="0" value="0" max="8"> <span id="grauExposicaoDescription" title="Vias muito perigosas, com consequências graves em caso de queda" style="text-decoration: underline;"><label id="grauExposicaoValue">E5</label></span></td></div></ul>
-				   <ul><label for="descricao">Grau de duração </label> <div><input type="range" id="grauCrux" name="grauCrux" min="0" value="0" max="27"> <label id="grauCruxValue">VIsup</label></div></ul>
+    		  	   <ul><label for="grauGeral" class="textoBox">Grau geral da via </label> <div><input type="range" id="grauGeral" name="grauGeral" min="0" value="0" max="11"> <label id="grauGeralValue">7º</label></div> </ul>
+    			   <ul><label for="grauCrux" class="textoBox">Grau do crux </label> <div><input type="range" id="grauCrux" name="grauCrux" min="0" value="0" max="27"> <label id="grauCruxValue">VIsup</label></div></ul>
+				   <ul><label for="grauArtificial" class="textoBox">Grau do artificial </label> <div><input type="range" id="grauArtificial" name="grauArtificial" min="0" value="0" max="10"> <label id="grauArtificialValue">A4+</label></div></ul>
+				   <ul><label for="artificialLibre" class="textoBox">Artificial em Livre </label> <div><input type="range" id="grauArtificialLivre" name="grauArtificialLivre" min="0" value="0" max="27"> <label id="grauArtificialLivreValue">Xa</label></div></ul>
+				   <ul><label for="grauExposição" class="textoBox">Grau de exposição </label> <div><input type="range" id="grauExposicao" name="grauExposicao" min="0" value="0" max="8"> <span id="grauExposicaoDescription" title="Vias muito perigosas, com consequências graves em caso de queda" style="text-decoration: underline;"><label id="grauExposicaoValue">E5</label></span></div></ul>
+				   <ul><label for="grauDuracao" class="textoBox">Grau de duração </label> <div><input type="range" id="grauCrux" name="grauCrux" min="0" value="0" max="27"> <label id="grauCruxValue">VIsup</label></div></ul>
     		  </div>
           </div>
+		  
+		    <div id="dadosGeo" class="boxes">
+		  	  <div class="top">
+			    <img alt="icon" />
+				<p class="tituloBox">Dados geograficos</p>
+		   </div>
+		   
+		    <div class="bottom">
+			  <ul><p class="textoBox">Extensão: <input class="spinner" type="text" />metros</p> </ul>
+			  <div id="coodBase">
+				  <p class="textoBase">Coordenadas da Base</p> 
+				  	 <ul><label for="latitude" class="textoBox">Latitude: </label><input type="text" name="" /></ul>
+				  	 <ul><label for="longetude" class="textoBox">Longetude: </label><input type="text" name="" /></ul>
+				  	 <ul><label for="altitude" class="textoBox">Altitude</label><input class="spinner" type="text"/><label for="metros" class="textoBox">metros</label></select></ul>
+			  </div>
+				  
+			  <ul><p class="textoBox">Cidade: <input type="text" name="nome"/></p></ul>
+			  <ul><p class="textoBox">Montanha: <input type="text" name="" /> </p></ul>
+			  <ul><p class="textoBox">Face: <input type="text" name="" /><p></ul>
+		  </div>
+		  
         </div>
 		<div id="rightColumn">  
 		  <div id="matSuggest" class="boxes">
             <div class="top">
               <img alt="icon" />
-              <p>Material Sugerido</p>
+              <p class="tituloBox">Material Sugerido</p>
             </div>
     		  <div class="bottom">
-    		  	   <ul><label for="nome">Quantidade: <select name="" size="1"> <option selected value=""></option></select></ul>
-    			   <ul><label for="descricao">Nome: </label> <input type="text" name="nome"/></ul>
+    		  	   <ul><label for="quantidade" class="textoBox">Quantidade:</label> <input class="spinner" type="text"/></ul>
+    			   <ul><label for="nome" class="textoBox">Nome: </label> <input type="text" name="nome"/></ul>
     		  </div>
           </div>
 		<div id="conquista" class="boxes">
             <div class="top">
-              <img alt="icon" />
-              <p>Conquista</p>
+            	 <img alt="icon" />
+            	 <p class="tituloBox">Conquista</p>
             </div>
     		  <div class="bottom">
-			  	   <ul><label for="descricao">Conquistadores: </label> <input type="text" name="nome"/></ul>
-    		  	   <ul><label for="nome">Ano da conquista: <select name="" size="1"> <option selected value=""></option></select></ul>
-    			   <ul><label for="descricao">Clube: </label> <input type="text" name="nome"/></ul>
+			  	   <ul><label for="conquistadores" class="textoBox">Conquistadores: </label> <input type="text" name="nome"/></ul>
+    		  	   <ul><label for="anoConquista" class="textoBox">Ano da conquista: <select name="" size="1"> <option selected value=""></option></select></ul>
+    			   <ul><label for="clube" class="textoBox">Clube: </label> <input type="text" name="nome"/></ul>
     		  </div>
           </div>
+		  
+		  <div id="tecAscensao" class="boxes">
+		  	   <div class="top">
+			   		<img alt="icon" />
+			    	<p class="tituloBox">Técnicas de Ascensão</p>
+			   </div>
+			   <div class="bottom">
+			   		<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="agarra" class="tecAscensaoCheckbox" /> Agarra<input type="radio" name="predominante" value=""></ul>
+					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="oposicao" class="tecAscensaoCheckbox"/> Oposição<input type="radio" name="predominante" value=""></ul>
+					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="entalamento" class="tecAscensaoCheckbox"/> Entalamento<input type="radio" name="predominante" value=""></ul>
+					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="chamine" class="tecAscensaoCheckbox"/> Chaminé<input type="radio" name="predominante" value=""></p></ul>
+					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="diedro" class="tecAscensaoCheckbox"/> Diedro<input type="radio" name="predominante" value=""></p></ul>
+					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="aderencia" class="tecAscensaoCheckbox"/> Aderência<input type="radio" name="predominante" value=""></p></ul>
+					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="teto" class="tecAscensaoCheckbox"/> Teto<input type="radio" name="predominante" value=""></p></ul>
+			   </div>
+		  
+		  </div>
+		  		  
 	   </div>
 		  
 		

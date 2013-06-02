@@ -14,20 +14,21 @@ div.top > img {
     float: left;
     margin: 0 10px;
 }
-div.top p {
-}
 div.top {
     background-color: #4F6525;
-    padding: 1%;
+    padding: 0%;
+    border: 1px solid #4F6525;
 }
 div.boxes {
     border: 1px solid #DBD8D3;
+    margin: 0 0 20px;
     max-width: 323px;
     min-width: 100px;
     width: 323px;
 }
 .bottom input, div.bottom textarea {
     float: right;
+    margin: 0 0 0 8px;
     width: 70%;
 }
 .bottom {
@@ -40,25 +41,45 @@ footer {
     clear: both;
 }
 
-.bottom input, div.bottom textarea {
-    float:right;
-    width:70%
-}
-
 div.bottom{ 
     padding:4%; 
 }
 div#leftColumn {
     float: left;
-    padding: 6% 0 0 20%;
+    padding: 3% 0 0 20%;
 }
 div#rightColumn {
     float: right;
-    padding: 6% 20% 0 0;
+    padding: 3% 20% 0 0;
 }
-.bottom {
-    padding: 6% 6% 12%;
+
+p.textoBox {
+    padding: 0;
+    text-align:right;
 }
-.bottom ul {
-    margin: 5px 0 10px;
+.bottom input[type="radio"] {
+    width: 0;
+}
+input.tecAscensaoCheckbox {
+    float:left;
+    width: 12%;
+}
+ul.tecAscensaoUl {
+    padding:0;
+}
+
+div#coodBase {
+    border: 1px solid #DBD8D3;
+    margin: -10px 0 10px 15px;
+    padding: 0 0 4%;
+    width: 90%;
+}
+p.textoBase {
+tex-overflow: 
+ }
+.textoBase {
+    background: none repeat scroll 0 0 #F5F4F0;
+    font: 12px trebuchet ms;
+    margin: -9px 0 4px 9px;
+    width: 118px;
 }

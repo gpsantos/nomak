@@ -1,0 +1,9 @@
+.spinner.ui-spinner-input {
+    float: left;
+    font-size: 0.6em;
+}
+
+.ui-spinner.ui-widget.ui-widget-content.ui-corner-all {
+    height: 19px;
+    width: 55px;
+}

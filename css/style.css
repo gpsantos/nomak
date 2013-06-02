@@ -5,6 +5,19 @@ body {
      margin:auto;
 }
 
+.tituloBox {
+    color: #ffffff;
+    font: bold 73% trebuchet,arial,sans-serif;
+    padding: 2%;
+}
+
+.textoBox {
+    color: black;
+    font: 73% trebuchet ms, arial, serif;
+    padding: 2%;
+}
+
+
 * {
     padding: 0;
     margin:0;
