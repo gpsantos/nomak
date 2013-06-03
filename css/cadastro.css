@@ -22,14 +22,13 @@ div.top {
 div.boxes {
     border: 1px solid #DBD8D3;
     margin: 0 0 20px;
-    max-width: 323px;
+    max-width: 340px;
     min-width: 100px;
-    width: 323px;
+    width: 340px;
 }
 .bottom input, div.bottom textarea {
-    float: right;
     margin: 0 0 0 8px;
-    width: 70%;
+    width: 67%;
 }
 .bottom {
     padding: 6% 6% 12%;
@@ -42,7 +41,7 @@ footer {
 }
 
 div.bottom{ 
-    padding:4%; 
+    padding:0 4% 0 0; 
 }
 div#leftColumn {
     float: left;
@@ -58,7 +57,8 @@ p.textoBox {
     text-align:right;
 }
 .bottom input[type="radio"] {
-    width: 0;
+    width: 15px;
+    float:right;
 }
 input.tecAscensaoCheckbox {
     float:left;
@@ -82,4 +82,24 @@ tex-overflow:
     font: 12px trebuchet ms;
     margin: -9px 0 4px 9px;
     width: 118px;
+}
+select#anoDaConquista {
+    margin: 0 55% 0 0;
+}
+#materialSugeridoQuantidade {
+}
+input#materialSugeridoNome {
+	width:44%;
+}
+div.noBorder {
+	border:0;
+}
+div#captcha {
+	text-align:right;
+}
+div#captcha textarea {
+	width:50%;
+}
+div#fonte input {
+	width:82%;
 }

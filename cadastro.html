@@ -54,22 +54,22 @@
 		  	  <div class="top">
 			    <img alt="icon" />
 				<p class="tituloBox">Dados geograficos</p>
-		   </div>
+		     </div>
 		   
 		    <div class="bottom">
 			  <ul><p class="textoBox">Extensão: <input class="spinner" type="text" />metros</p> </ul>
 			  <div id="coodBase">
 				  <p class="textoBase">Coordenadas da Base</p> 
-				  	 <ul><label for="latitude" class="textoBox">Latitude: </label><input type="text" name="" /></ul>
-				  	 <ul><label for="longetude" class="textoBox">Longetude: </label><input type="text" name="" /></ul>
-				  	 <ul><label for="altitude" class="textoBox">Altitude</label><input class="spinner" type="text"/><label for="metros" class="textoBox">metros</label></select></ul>
+				  	 <ul><p class="textoBox">Latitude: <input type="text" name="" /></p> </ul>
+				  	 <ul><p class="textoBox">Longetude: <input type="text" name="" /></p> </ul>
+				  	 <ul><p class="textoBox">Altitude<input class="spinner" type="text"/>metros</ul>
 			  </div>
 				  
 			  <ul><p class="textoBox">Cidade: <input type="text" name="nome"/></p></ul>
 			  <ul><p class="textoBox">Montanha: <input type="text" name="" /> </p></ul>
 			  <ul><p class="textoBox">Face: <input type="text" name="" /><p></ul>
+		    </div>
 		  </div>
-		  
         </div>
 		<div id="rightColumn">  
 		  <div id="matSuggest" class="boxes">
@@ -78,8 +78,8 @@
               <p class="tituloBox">Material Sugerido</p>
             </div>
     		  <div class="bottom">
-    		  	   <ul><label for="quantidade" class="textoBox">Quantidade:</label> <input class="spinner" type="text"/></ul>
-    			   <ul><label for="nome" class="textoBox">Nome: </label> <input type="text" name="nome"/></ul>
+    		  	   <ul id="materialSugeridoQuantidade"><p class="textoBox">Quantidade:<input class="spinner" type="text"/>
+    			   Nome: <input type="text" name="nome" id="materialSugeridoNome"/></p> </ul>
     		  </div>
           </div>
 		<div id="conquista" class="boxes">
@@ -88,9 +88,9 @@
             	 <p class="tituloBox">Conquista</p>
             </div>
     		  <div class="bottom">
-			  	   <ul><label for="conquistadores" class="textoBox">Conquistadores: </label> <input type="text" name="nome"/></ul>
-    		  	   <ul><label for="anoConquista" class="textoBox">Ano da conquista: <select name="" size="1"> <option selected value=""></option></select></ul>
-    			   <ul><label for="clube" class="textoBox">Clube: </label> <input type="text" name="nome"/></ul>
+			  	   <ul><p class="textoBox">Conquistadores: <input type="text" name="nome"/></p> </ul>
+    		  	   <ul><p class="textoBox">Ano da conquista: <select id="anoDaConquista" name="" size="1"> <option selected value=""></option></select></p></ul>
+    			   <ul><p class="textoBox">Clube: <input type="text" name="nome"/></p> </ul>
     		  </div>
           </div>
 		  
@@ -110,7 +110,13 @@
 			   </div>
 		  
 		  </div>
-		  		  
+		  <div id="fonte" class="boxes noBorder">
+		  	<p class="textoBox">Fonte: <input type="text" /></p>
+		  </div>
+		  <div id="captcha" class="boxes noBorder">
+		  	<img src="" alt="captcha" />
+		  	<textarea></textarea>
+		  </div>  
 	   </div>
 		  
 		
