@@ -22,9 +22,9 @@ div.top {
 div.boxes {
     border: 1px solid #DBD8D3;
     margin: 0 0 20px;
-    max-width: 340px;
+    max-width: 380px;
     min-width: 100px;
-    width: 340px;
+    width: 380px;
 }
 .bottom input, div.bottom textarea {
     margin: 0 0 0 8px;
@@ -36,20 +36,17 @@ div.boxes {
 .bottom ul {
     margin: 5px 0 10px;
 }
-footer {
-    clear: both;
-}
 
 div.bottom{ 
     padding:0 4% 0 0; 
 }
 div#leftColumn {
     float: left;
-    padding: 3% 0 0 20%;
+    padding: 3% 0 0 16%;
 }
 div#rightColumn {
     float: right;
-    padding: 3% 20% 0 0;
+    padding: 3% 16% 0 0;
 }
 
 p.textoBox {
@@ -102,4 +99,8 @@ div#captcha textarea {
 }
 div#fonte input {
 	width:82%;
+}
+div#basicInfo input, div#basicInfo textarea {
+    vertical-align: top;
+    width: 77%;
 }
