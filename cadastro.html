@@ -43,12 +43,12 @@
               <p class="tituloBox">Graduação</p>
             </div>
     		  <div class="bottom">
-    		  	   <ul><label for="grauGeral" class="textoBox">Grau geral da via </label> <div><input type="range" id="grauGeral" name="grauGeral" min="0" value="0" max="11"> <label id="grauGeralValue" class="textoBox">7º</label></div> </ul>
-    			   <ul><label for="grauCrux" class="textoBox">Grau do crux </label> <div><input type="range" id="grauCrux" name="grauCrux" min="0" value="0" max="27"> <label id="grauCruxValue" class="textoBox"> VIsup</label></div></ul>
-				   <ul><label for="grauArtificial" class="textoBox">Grau do artificial </label> <div><input type="range" id="grauArtificial" name="grauArtificial" min="0" value="0" max="10"> <label id="grauArtificialValue" class="textoBox">A4+</label></div></ul>
-				   <ul><label for="artificialLibre" class="textoBox">Artificial em Livre </label> <div><input type="range" id="grauArtificialLivre" name="grauArtificialLivre" min="0" value="0" max="27"> <label id="grauArtificialLivreValue" class="textoBox">Xa</label></div></ul>
-				   <ul><label for="grauExposição" class="textoBox">Grau de exposição </label> <div><input type="range" id="grauExposicao" name="grauExposicao" min="0" value="0" max="8"> <span id="grauExposicaoDescription" title="Vias muito perigosas, com consequências graves em caso de queda" style="text-decoration: underline;"><label id="grauExposicaoValue" class="textoBox">E5</label></span></div></ul>
-				   <ul><label for="grauDuracao" class="textoBox">Grau de duração </label> <div><input type="range" id="grauCrux" name="grauCrux" min="0" value="0" max="27"> <label id="grauCruxValue" class="textoBox">VIsup</label></div></ul>
+    		  	   <ul class="textoBox"><label class="labelGraduacao labels" >Grau geral da via</label> <input type="range" id="grauGeral" name="grauGeral" min="0" value="0" max="11" > <label id="grauGeralValue" >7</label> </ul>
+    			   <ul class="textoBox"><label class="labelGraduacao labels">Grau do crux </label> <input type="range" id="grauCrux" name="grauCrux" min="0" value="0" max="27"> <label id="grauCruxValue" > VIsup</label></ul>
+				   <ul class="textoBox"><label class="labelGraduacao labels">Grau do artificial</label> <input type="range" id="grauArtificial" name="grauArtificial" min="0" value="0" max="10"> <label id="grauArtificialValue" >A4+</label></ul>
+				   <ul class="textoBox"><label class="labelGraduacao labels">Artificial em Livre</label> <input type="range" id="grauArtificialLivre" name="grauArtificialLivre" min="0" value="0" max="27"> <label id="grauArtificialLivreValue" >Xa</label></ul>
+				   <ul class="textoBox"><label class="labelGraduacao labels" >Grau de exposição</label> <input type="range" id="grauExposicao" name="grauExposicao" min="0" value="0" max="8"> <span id="grauExposicaoDescription" title="Vias muito perigosas, com consequÃªncias graves em caso de queda" style="text-decoration: underline;"><label id="grauExposicaoValue" >E5</label></span></ul>
+				   <ul class="textoBox"><label class="labelGraduacao labels">Grau de duração</label> <input type="range" id="grauCrux" name="grauCrux" min="0" value="0" max="27"> <label id="grauCruxValue" >VIsup</label></ul>
     		  </div>
           </div>
 		  
@@ -56,20 +56,20 @@
     		  	  <div class="top">
     			    <img alt="icon" />
     				<p class="tituloBox">Dados geograficos</p>
-		   </div>
+		   			</div>
 		   
     		    <div class="bottom">
-    			  <ul><p class="textoBox">Extensão: <input class="spinner" type="text" />metros</p> </ul>
+    			  <ul id="extensao" ><p class="textoBox labels">Extensão: </p><input class="spinner" type="text" />metros </ul>
     			  <div id="coodBase">
     				  <p class="textoBase">Coordenadas da Base</p> 
-				  	 <ul><p class="textoBox">Latitude: <input type="text" name="" /></p> </ul>
-				  	 <ul><p class="textoBox">Longetude: <input type="text" name="" /></p> </ul>
-				  	 <ul><p class="textoBox">Altitude<input class="spinner" type="text"/>metros</ul>
+				  	 <ul><p class="textoBox labels">Latitude: </p><input type="text" name="" /> </ul>
+				  	 <ul><p class="textoBox labels">Longetude:</p> <input type="text" name="" /> </ul>
+				  	 <ul><p class="textoBox labels">Altitude: </p><input class="spinner" type="text"/>metros</ul>
     			  </div>
     				  
-    			  <ul><p class="textoBox">Cidade: <input type="text" name="nome"/></p></ul>
-    			  <ul><p class="textoBox">Montanha: <input type="text" name="" /> </p></ul>
-    			  <ul><p class="textoBox">Face: <input type="text" name="" /><p></ul>
+    			  <ul><p class="textoBox labels">Cidade: </p><input type="text" name="nome"/></ul>
+    			  <ul><p class="textoBox labels">Montanha: </p><input type="text" name="" /></ul>
+    			  <ul><p class="textoBox labels">Face: </p><input type="text" name="" /></ul>
 		  </div>
 		  </div>
         </div>
@@ -80,8 +80,8 @@
               <p class="tituloBox">Material Sugerido</p>
             </div>
     		  <div class="bottom">
-    		  	   <ul id="materialSugeridoQuantidade"><p class="textoBox">Quantidade:<input class="spinner" type="text"/>
-    			   Nome: <input type="text" name="nome" id="materialSugeridoNome"/></p> </ul>
+    		  	   <ul id="materialSugeridoQuantidade"><p class="textoBox labels">Quantidade:</p><input class="spinner" type="text"/>
+    			   <p class="textoBox labels">Nome:</p> <input type="text" name="nome" id="materialSugeridoNome"/> </ul>
     		  </div>
           </div>
 		<div id="conquista" class="boxes">
@@ -103,7 +103,7 @@
 			   </div>
 			   <div class="bottom">
 			   		<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="agarra" class="tecAscensaoCheckbox" /> Agarra<input type="radio" name="predominante" value=""></ul>
-					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="oposicao" class="tecAscensaoCheckbox"/> Oposição<input type="radio" name="predominante" value=""></ul>
+					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="oposicao" class="tecAscensaoCheckbox"/> Oposiçãoo<input type="radio" name="predominante" value=""></ul>
 					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="entalamento" class="tecAscensaoCheckbox"/> Entalamento<input type="radio" name="predominante" value=""></ul>
 					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="chamine" class="tecAscensaoCheckbox"/> Chaminé<input type="radio" name="predominante" value=""></p></ul>
 					<ul class="tecAscensaoUl textoBox"><input type="checkbox" name="diedro" class="tecAscensaoCheckbox"/> Diedro<input type="radio" name="predominante" value=""></p></ul>
