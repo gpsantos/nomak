@@ -5,9 +5,16 @@
 	<title>Kamon! Cadastro</title>
 	<link href="css/smoothness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/cadastro.css">
+	<!--
 	<link rel="stylesheet" media="screen and (max-width:400px)" href="css/cadastro_small.css"></link>
     <link rel="stylesheet" media="screen and (min-width:400px)" type="text/css" href="css/cadastro.css">
+	-->
 	<link rel="stylesheet" type="text/css" href="css/spinner.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
 	<script src="js/jquery-1.9.1.js"></script>
  	<script src="js/jquery-ui-1.10.3.custom.js"></script>
 	<script type="text/javascript">
@@ -20,11 +27,16 @@
     <![endif]-->	
   </head>
   <body>
-  		<div id="topo"> 
+  	<div id="topo" class="row-fluid">
+  		<div class="span6"><img id="logo" src="img/k.jpg" alt=""/></div>
+  		<div class="span6 hidden-phone"><img id="mountain" class="pull-right" src="img/mountain.jpg" alt=""/></div>		
+  	</div>
+  		<!---
+  			 <div id="topo"> 
 			 <img id="logo" src="img/k.jpg" alt="" /> 
 			 <img id="mountain" src="img/mountain.jpg" /> 
 		</div>
-		
+		-->
 	<div id="formComplete">	
 		<div id="leftColumn">
           <div id="basicInfo" class="boxes">
@@ -48,7 +60,7 @@
 				   <ul class="textoBox"><label class="labelGraduacao labels">Grau do artificial</label> <input type="range" id="grauArtificial" name="grauArtificial" min="0" value="0" max="10"> <label id="grauArtificialValue" >A4+</label></ul>
 				   <ul class="textoBox"><label class="labelGraduacao labels">Artificial em Livre</label> <input type="range" id="grauArtificialLivre" name="grauArtificialLivre" min="0" value="0" max="27"> <label id="grauArtificialLivreValue" >Xa</label></ul>
 				   <ul class="textoBox"><label class="labelGraduacao labels" >Grau de exposição</label> <input type="range" id="grauExposicao" name="grauExposicao" min="0" value="0" max="8"> <span id="grauExposicaoDescription" title="Vias muito perigosas, com consequÃªncias graves em caso de queda" style="text-decoration: underline;"><label id="grauExposicaoValue" >E5</label></span></ul>
-				   <ul class="textoBox"><label class="labelGraduacao labels">Grau de duração</label> <input type="range" id="grauCrux" name="grauCrux" min="0" value="0" max="27"> <label id="grauCruxValue" >VIsup</label></ul>
+				   <ul class="textoBox"><label class="labelGraduacao labels">Grau de duração</label> <input type="range" id="grauDuracao" name="grauDuracao" min="0" value="0" max="27"> <label id="grauDuracaoValue" >D4</label></ul>
     		  </div>
           </div>
 		  
