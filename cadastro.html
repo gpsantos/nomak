@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
 	<title>Kamon! Cadastro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
 	<link href="css/smoothness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" media="screen and (max-width:400px)" href="css/cadastro_small.css"></link>
-    <link rel="stylesheet" media="screen and (min-width:400px)" type="text/css" href="css/cadastro.css">
+    <link rel="stylesheet" type="text/css" href="css/cadastro.css">
 	<link rel="stylesheet" type="text/css" href="css/spinner.css">
 	<script src="js/jquery-1.9.1.js"></script>
  	<script src="js/jquery-ui-1.10.3.custom.js"></script>
@@ -20,13 +23,12 @@
     <![endif]-->	
   </head>
   <body>
-  		<div id="topo"> 
-			 <img id="logo" src="img/k.jpg" alt="" /> 
-			 <img id="mountain" src="img/mountain.jpg" /> 
+  		<div id="topo" class="row-fluid">
+  			<div class="span6"> <img id="logo" src="img/k.jpg" alt="" /></div> <div class="span6" ><img id="mountain" class="visible-desktop" src="img/mountain.jpg" /></div> 
 		</div>
-		
-	<div id="formComplete">	
-		<div id="leftColumn">
+	<div class="row-fluid"><div class="span12"></div></div>
+	<div id="formComplete" class="row-fluid">
+		<div id="leftColumn" class="span4 offset1">
           <div id="basicInfo" class="boxes">
             <div class="top">
               <img alt="icon" />
@@ -73,7 +75,7 @@
 		  </div>
 		  </div>
         </div>
-		<div id="rightColumn">  
+		<div id="rightColumn" class="span4 offset1">  
 		  <div id="matSuggest" class="boxes">
             <div class="top">
               <img alt="icon" />
@@ -121,7 +123,7 @@
 		  </div>  
 	   </div>
    
- </div>
+ 	</div>
  	<footer class="textoFooter">
  		 <div>
   		 	 <span id="kamon">Kamon</span>
@@ -132,10 +134,7 @@
     		 <a href="#" class="textoFooter">Pesquisar</a>
 			 </span>
 		 </div>
-
-
-		
-</footer>	
+	</footer>	
 	
   </body>
 

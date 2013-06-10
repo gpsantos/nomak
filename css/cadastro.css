@@ -2,7 +2,6 @@
 #topo {
     background-color: #4F6525;
     background-repeat: repeat-x;
-    height: 126px;
 }
 #logo {
     float: left;
@@ -22,9 +21,6 @@ div.top {
 div.boxes {
     border: 1px solid #DBD8D3;
     margin: 0 0 20px;
-    max-width: 380px;
-    min-width: 100px;
-    width: 380px;
 }
 .bottom input, div.bottom textarea {
     margin: 0 0 0 8px;
@@ -42,12 +38,8 @@ div.bottom {
 }
 
 div#leftColumn {
-    float: left;
-    padding: 3% 0 0 16%;
 }
 div#rightColumn {
-    float: right;
-    padding: 3% 16% 0 0;
 }
 
 div#dadosGeo p.textoBox {
@@ -82,12 +74,14 @@ div#coodBase {
     width: 118px;
 }
 select#anoDaConquista {
-    margin: 0 55% 0 0;
+    margin: 0 55% 0% 2%;
+    width: 13%;
 }
 #materialSugeridoQuantidade {
+    margin-left: 3%;
 }
 input#materialSugeridoNome {
-	width:44%;
+	width: 44%;
 }
 div.noBorder {
 	border:0;
@@ -102,7 +96,6 @@ div#fonte input {
 	width:82%;
 }
 div#basicInfo input, div#basicInfo textarea {
-    vertical-align: top;
     width: 77%;
 }
 .labelGraduacao {
