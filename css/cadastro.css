@@ -38,8 +38,21 @@ div.bottom {
 }
 
 div#leftColumn {
+	min-width:380px;
 }
 div#rightColumn {
+	min-width:380px;
+}
+
+@media (min-width:895px) and (max-width:1066px) {
+	div#rightColumn {
+		margin-left:5%;
+	}
+}
+@media (min-width:768px) and (max-width:894px) {
+	div#rightColumn {
+		margin-left:8.56354%;
+	}
 }
 
 div#dadosGeo p.textoBox {
@@ -96,7 +109,7 @@ div#fonte input {
 	width:82%;
 }
 div#basicInfo input, div#basicInfo textarea {
-    width: 77%;
+    width: 95%;
 }
 .labelGraduacao {
     padding: 0;
