@@ -6,4 +6,7 @@
 .ui-spinner.ui-widget.ui-widget-content.ui-corner-all {
     height: 19px;
     width: 55px;
+    margin-left: 2%;
+    margin-right: 2%;
+    float: left;
 }
