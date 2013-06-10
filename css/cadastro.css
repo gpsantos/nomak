@@ -126,3 +126,9 @@ div#graduacao input {
     margin-bottom: 7%;
     
 }
+#checkboxSugerido {
+	text-align: right;
+}
+#checkboxSugerido input[type="checkbox"] {
+    width: 17px;
+}
