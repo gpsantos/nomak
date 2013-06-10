@@ -13,11 +13,42 @@ body {
 
 .textoBox {
     color: black;
-    font: 73% trebuchet ms, arial, serif;
-    padding: 2%;
+    font: 0.75em trebuchet ms, arial, serif;
 }
 
-
+footer {
+    background-color:#4F6525;
+    clear:both;
+    }
+ footer span#kamon{
+ }
+ footer span#links{
+    margin: 0 0 0 60%;
+ }
+.textoFooter{
+    color: #ffffff;
+    font: 90% trebuchet,arial,sans-serif;
+    padding: 2%;         
+ }
+a.textoFooter:link{
+    text-decoration:none;         
+ }
+ a.textoFooter:visited {
+    text-decoration:none;
+  }
+a.textoFooter:hover {
+    text-decoration:underline;
+ }
+ div#rightFoot {
+    float: right;
+    padding: 0;
+    width: 25%;
+}
+div#leftFoot {
+    float:left;
+    padding:0 0 0 0%;
+    
+ }
 * {
     padding: 0;
     margin:0;

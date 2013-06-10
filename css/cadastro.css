@@ -22,9 +22,9 @@ div.top {
 div.boxes {
     border: 1px solid #DBD8D3;
     margin: 0 0 20px;
-    max-width: 340px;
+    max-width: 380px;
     min-width: 100px;
-    width: 340px;
+    width: 380px;
 }
 .bottom input, div.bottom textarea {
     margin: 0 0 0 8px;
@@ -36,25 +36,26 @@ div.boxes {
 .bottom ul {
     margin: 5px 0 10px;
 }
-footer {
-    clear: both;
+
+div.bottom {
+    padding: 3% 5% 1% 0px;
 }
 
-div.bottom{ 
-    padding:0 4% 0 0; 
-}
 div#leftColumn {
     float: left;
-    padding: 3% 0 0 20%;
+    padding: 3% 0 0 16%;
 }
 div#rightColumn {
     float: right;
-    padding: 3% 20% 0 0;
+    padding: 3% 16% 0 0;
+}
+
+div#dadosGeo p.textoBox {
+    width: 22%;
 }
 
 p.textoBox {
-    padding: 0;
-    text-align:right;
+    text-align: right;
 }
 .bottom input[type="radio"] {
     width: 15px;
@@ -72,11 +73,8 @@ div#coodBase {
     border: 1px solid #DBD8D3;
     margin: -10px 0 10px 15px;
     padding: 0 0 4%;
-    width: 90%;
+    width: 96%;
 }
-p.textoBase {
-tex-overflow: 
- }
 .textoBase {
     background: none repeat scroll 0 0 #F5F4F0;
     font: 12px trebuchet ms;
@@ -102,4 +100,23 @@ div#captcha textarea {
 }
 div#fonte input {
 	width:82%;
+}
+div#basicInfo input, div#basicInfo textarea {
+    vertical-align: top;
+    width: 77%;
+}
+.labelGraduacao {
+    padding: 0;
+    width: 40%;
+}
+.labels {
+    float: left;
+    text-align: right;
+}
+div#graduacao input {
+    width: 40%;
+}
+#extensao {
+    margin-bottom: 7%;
+    
 }
