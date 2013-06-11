@@ -26,7 +26,7 @@
   		<div id="topo" class="row-fluid">
   			<div class="span6"> <img id="logo" src="img/k.jpg" alt="" /></div> <div class="span6" ><img id="mountain" class="hidden-phone" src="img/mountain.jpg" /></div> 
 		</div>
-	<div class="row-fluid"><div class="span12"></div>
+	<div class="row-fluid"><div class="span12"></div></div>
 	<div id="formComplete" class="row-fluid">
 		<div id="leftColumn" class="span4 offset1">
           <div id="basicInfo" class="boxes">
@@ -96,9 +96,9 @@
             	 <p class="tituloBox">Conquista</p>
             </div>
     		  <div class="bottom">
-			  	   <ul><p class="textoBox">Conquistadores: <input type="text" name="nome"/></p> </ul>
-    		  	   <ul><p class="textoBox">Ano da conquista: <select id="anoDaConquista" name="" size="1"> <option selected value=""></option></select></p></ul>
-    			   <ul><p class="textoBox">Clube: <input type="text" name="nome"/></p> </ul>
+			  	   <ul class="align-right"><label class="textoBox">Conquistadores:</label> <input type="text" name="nome"/> </ul>
+    		  	   <ul class="align-right"><label class="textoBox">Ano da conquista: </label><select id="anoDaConquista" name="" size="1"> <option selected value=""></option></select></ul>
+    			   <ul class="align-right"><label class="textoBox">Clube: </label><input type="text" name="nome"/></ul>
     		  </div>
           </div>
 		  
@@ -119,25 +119,26 @@
 		  
 		  </div>
 		  <div id="fonte" class="boxes noBorder">
-		  	<p class="textoBox">Fonte: <input type="text" /></p>
+		  	<label class="textoBox">Fonte: </label><input type="text" />
 		  </div>
 		  <div id="captcha" class="boxes noBorder">
-		  	<img src="" alt="captcha" />
-		  	<textarea></textarea>
-		  </div>  
+		  	<img src="img/captcha.jpg" alt="captcha" />
+		  	<textarea rows="3"></textarea>
+		  </div> 
+		  <div class="align-right">
+		  	<button type="submit"></button>
+		  </div>
 	   </div>
    
  	</div>
  	<footer class="textoFooter">
- 		 <div>
-  		 	 <span id="kamon">Kamon</span>
-			 <span id="links">
-    		 <a href="#" class="textoFooter">Home</a>|
-    		 <a href="#" class="textoFooter">Quem Somos</a>|
-    		 <a href="#" class="textoFooter">Cadastro</a>|
-    		 <a href="#" class="textoFooter">Pesquisar</a>
-			 </span>
-		 </div>
+ 		<p class="pull-left" >Kamon</p>
+  		<div class="align-right">
+  		 	<a href="#" class="textoFooter">Home</a><span class="hidden-phone">|</span>
+    	 	<a href="#" class="textoFooter">Quem Somos</a><span class="hidden-phone">|</span>
+    	 	<a href="#" class="textoFooter">Cadastro</a><span class="hidden-phone">|</span>
+    		<a href="#" class="textoFooter">Pesquisar</a>
+		</div>
 	</footer>	
 	
   </body>

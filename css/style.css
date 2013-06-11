@@ -19,36 +19,37 @@ body {
 footer {
     background-color:#4F6525;
     clear:both;
-    }
- footer span#kamon{
- }
- footer span#links{
-    margin: 0 0 0 60%;
- }
+    margin-top: 40px;
+}
 .textoFooter{
     color: #ffffff;
-    font: 90% trebuchet,arial,sans-serif;
+    font: 0.9em trebuchet,arial,sans-serif;
     padding: 2%;         
  }
+
+@media (max-width:480px) {
+	.textoFooter{
+		padding: 1%;         
+	}
+
+	footer a {
+		display:block;
+	}
+}
+
 a.textoFooter:link{
     text-decoration:none;         
  }
- a.textoFooter:visited {
+a.textoFooter:visited {
     text-decoration:none;
   }
 a.textoFooter:hover {
     text-decoration:underline;
  }
- div#rightFoot {
-    float: right;
-    padding: 0;
-    width: 25%;
+footer p.pull-left{
+	float:left;
 }
-div#leftFoot {
-    float:left;
-    padding:0 0 0 0%;
-    
- }
+
 * {
     padding: 0;
     margin:0;

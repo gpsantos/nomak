@@ -54,7 +54,6 @@ div#rightColumn {
 		margin-left:8.56354%;
 	}
 }
-
 div#dadosGeo p.textoBox {
     width: 22%;
 }
@@ -82,7 +81,7 @@ div#coodBase {
 }
 .textoBase {
     background: none repeat scroll 0 0 #F5F4F0;
-    font: 12px trebuchet ms;
+    font: 0.75em trebuchet ms;
     margin: -9px 0 4px 9px;
     width: 118px;
 }
@@ -131,4 +130,21 @@ div#graduacao input {
 }
 #checkboxSugerido input[type="checkbox"] {
     width: 17px;
+}
+.align-right {
+    text-align: right;
+}
+input, textarea {
+    color: black;
+    font: 1em trebuchet ms;
+}
+input[type='text'] {
+	height:22px;
+}
+button[type='submit']{
+	background-image: url('../img/bt_salvar.jpg');
+	width: 72px;
+	height: 30px;
+	background-repeat: no-repeat;
+	border: none;
 }
