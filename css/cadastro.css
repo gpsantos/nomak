@@ -141,8 +141,12 @@ input, textarea {
 input[type='text'] {
 	height:22px;
 }
+input, textarea {
+    color: black;
+    font-size: 0.8em;
+}
 button[type='submit']{
-	background-image: url('../img/bt_salvar.jpg');
+	background-image: url('../img/bt_salvar.png');
 	width: 72px;
 	height: 30px;
 	background-repeat: no-repeat;
