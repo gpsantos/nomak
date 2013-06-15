@@ -3,6 +3,8 @@
     background-color: #4F6525;
     background-repeat: repeat-x;
     vertical-align: middle;
+    position: fixed;
+    z-index: 1;
 }
 #logo {
     float: left;
@@ -22,6 +24,9 @@ div.top {
     background-color: #4F6525;
     padding: 0%;
     border: 1px solid #4F6525;
+}
+#mainSection {
+	margin-top:100px;
 }
 div.boxes {
     border: 1px solid #DBD8D3;
