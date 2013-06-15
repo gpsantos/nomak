@@ -2,16 +2,21 @@
 #topo {
     background-color: #4F6525;
     background-repeat: repeat-x;
+    vertical-align: middle;
 }
 #logo {
     float: left;
 }
+.span6.logoT > img {
+    margin: 2.5% 0 0 4%;
+   }
+   
 #mountain {
     float: right;
 }
 div.top > img {
     float: left;
-    margin: 0 10px;
+    margin: 6px 10px;
 }
 div.top {
     background-color: #4F6525;
@@ -99,7 +104,7 @@ div.noBorder {
 	border:0;
 }
 div#captcha {
-	text-align:right;
+	text-align:right;ver
 }
 div#captcha textarea {
 	width:50%;
@@ -152,3 +157,4 @@ button[type='submit']{
 	background-repeat: no-repeat;
 	border: none;
 }
+
