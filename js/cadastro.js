@@ -18,6 +18,9 @@ $(document).ready(function() {
 			alert(textStatus + ' ' + error);
 		});
 	}
+	
+	var cidadesUrl = 'json/listacidades.json';
+	loadAutoCompleteFromJSON(cidadesUrl, "#cidade");
 
 	var facemontanhaUrl = 'json/listafacemontanha.json';
 	loadAutoCompleteFromJSON(facemontanhaUrl, "#faceMontanha");
