@@ -51,4 +51,10 @@ $(document).ready(function() {
 	$("#latitude").blur(loadGoogleGeoLocation);
 	$("#longitude").blur(loadGoogleGeoLocation);
 
+	$('#adicionar').click(function() {
+		var html = $('#materialSugeridoTemplate').html();
+		$('#materialSugeridoFields').append(html);
+	});
+	
+	
 });

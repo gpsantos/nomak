@@ -56,12 +56,12 @@ div#rightColumn {
 
 @media (min-width:895px) and (max-width:1066px) {
 	div#rightColumn {
-		margin-left:5%;
+		margin-left:17.021%;
 	}
 }
 @media (min-width:768px) and (max-width:894px) {
 	div#rightColumn {
-		margin-left:8.56354%;
+		margin-left:17.021%;
 	}
 }
 div#dadosGeo p.textoBox {
@@ -166,3 +166,6 @@ button[type='submit']{
     font: bold 1.3em trebuchet ms,sans-serif;
     text-align: right;
    }
+.materialButton span {
+	cursor: pointer;
+} 
