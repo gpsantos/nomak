@@ -103,7 +103,7 @@ select#anoDaConquista {
     margin-left: 3%;
 }
 input#materialSugeridoNome {
-	width: 44%;
+	width: 47%;
 }
 div.noBorder {
 	border:0;
@@ -162,4 +162,7 @@ button[type='submit']{
 	background-repeat: no-repeat;
 	border: none;
 }
-
+.materialButton {
+    font: bold 1.3em trebuchet ms,sans-serif;
+    text-align: right;
+   }
