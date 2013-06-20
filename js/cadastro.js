@@ -56,5 +56,28 @@ $(document).ready(function() {
 		$('#materialSugeridoFields').append(html);
 	});
 	
+	function configDialog(id) {
+		$( id ).dialog({ 
+			autoOpen: false,
+			buttons: [ { text: "Ok", click: function() { 
+				$( this ).dialog( "close" ); 
+			} 
+			} ],		
+			open: function(event, ui) {
+				setTimeout(function(){
+					$(id).dialog('close');                
+				}, 3000);
+			}
+		});
+		
+	}
+	
+	configDialog("#dialogFail");
+	configDialog("#dialogSuccess");
+
+	$( "#save" ).click(function() {
+		$( "#dialogSuccess" ).dialog( "open" );
+		$(".ui-dialog-titlebar").hide();
+	});
 	
 });
