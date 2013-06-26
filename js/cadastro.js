@@ -19,16 +19,16 @@ $(document).ready(function() {
 		});
 	}
 	
-	var cidadesUrl = 'json/listacidades.json';
+	var cidadesUrl = 'json/listacidades.txt';
 	loadAutoCompleteFromJSON(cidadesUrl, "#cidade");
 
-	var facemontanhaUrl = 'json/listafacemontanha.json';
+	var facemontanhaUrl = 'json/listafacemontanha.txt';
 	loadAutoCompleteFromJSON(facemontanhaUrl, "#faceMontanha");
 
-	var clubemontanhismoUrl = 'json/listaclubemontanhismo.json';
+	var clubemontanhismoUrl = 'json/listaclubemontanhismo.txt';
 	loadAutoCompleteFromJSON(clubemontanhismoUrl, "#clube");
 
-	var googlemapsUrl = 'json/googlemaps.json';
+	var googlemapsUrl = 'json/googlemaps.txt';
 
 	function loadGoogleGeoLocation() {
 		if ($("#latitude").val() != "" && $("#longitude").val() != "") {
@@ -97,7 +97,6 @@ $(document).ready(function() {
     var grauDuracaoList;
     
     function updateValues() {
-		grauGeralValue.innerHTML = (grauGeral.valueAsNumber == 0) ? "" : grauGeralList[grauGeral.valueAsNumber - 1].representacao;
 		grauCruxValue.innerHTML = (grauCrux.valueAsNumber == 0) ? "": grauCruxList[grauCrux.valueAsNumber - 1].representacao;
 		grauArtificialValue.innerHTML = (grauArtificial.valueAsNumber == 0) ? "" : grauArtificialList[grauArtificial.valueAsNumber - 1].representacao;
 		grauArtificialLivreValue.innerHTML = (grauArtificialLivre.valueAsNumber == 0) ? "" : grauArtificialLivreList[grauArtificialLivre.valueAsNumber - 1].representacao;
@@ -105,29 +104,33 @@ $(document).ready(function() {
 		grauDuracaoValue.innerHTML = (grauDuracao.valueAsNumber == 0) ? "" : grauDuracaoList[grauDuracao.valueAsNumber - 1].representacao;
 		
 		grauExposicaoDescription.title = (grauExposicao.valueAsNumber == 0) ? "" : grauExposicaoList[grauExposicao.valueAsNumber - 1].descricao;
-		grauDuracaoDescription.title = (grauDuracao.valueAsNumber == 0) ? "" : grauDuracaoList[grauDuracao.valueAsNumber - 1].descricao;
+		//grauDuracaoDescription.title = (grauDuracao.valueAsNumber == 0) ? "" : grauDuracaoList[grauDuracao.valueAsNumber - 1].descricao;
 	}
+    
+    $('#grauGeral').change(function() {
+    	grauGeralValue.innerHTML = (grauGeral.valueAsNumber == 0) ? "" : grauGeralList[grauGeral.valueAsNumber - 1].representacao;
+    });
 	
 	
-		$.getJSON("json/listagraugeral", function(jsonGrauGeralList) {
+		$.getJSON("json/listagraugeral.txt", function(jsonGrauGeralList) {
     		grauGeral.max = jsonGrauGeralList.length;
     		grauGeralList = jsonGrauGeralList;
 		});
-		$.getJSON("json/kamon/listagraucrux", function(jsonGrauCruxList) {
+		$.getJSON("json/listagraucrux.txt", function(jsonGrauCruxList) {
     		grauCrux.max = jsonGrauCruxList.length;
     		grauCruxList = jsonGrauCruxList;
     		grauArtificialLivre.max = jsonGrauCruxList.length;
     		grauArtificialLivreList = jsonGrauCruxList;
 		});
-    	$.getJSON("json/listagrauartificial", function(jsonGrauArtificialList) {
+    	$.getJSON("json/listagrauartificial.txt", function(jsonGrauArtificialList) {
     		grauArtificial.max = jsonGrauArtificialList.length;
     		grauArtificialList = jsonGrauArtificialList;
 		});
-		$.getJSON("json/listagrauexposicao", function(jsonGrauExposicaoList) {
+		$.getJSON("json/listagrauexposicao.txt", function(jsonGrauExposicaoList) {
     		grauExposicao.max = jsonGrauExposicaoList.length;
     		grauExposicaoList = jsonGrauExposicaoList;
 		});
-		$.getJSON("json/listagrauduracao", function(jsonGrauDuracaoList) {
+		$.getJSON("json/listagrauduracao.txt", function(jsonGrauDuracaoList) {
     		grauDuracao.max = jsonGrauDuracaoList.length;
     		grauDuracaoList = jsonGrauDuracaoList;
 		});
