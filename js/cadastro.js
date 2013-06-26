@@ -52,9 +52,17 @@ $(document).ready(function() {
 	$("#longitude").blur(loadGoogleGeoLocation);
 
 	$('#adicionar').click(function() {
+		$(".spinner").spinner("destroy");
 		var html = $('#materialSugeridoTemplate').html();
 		$('#materialSugeridoFields').append(html);
+		$(".spinner").spinner();
+		
 	});
+	$('#excluir').click(function() {
+		$('#materialSugeridoFields ul').last().remove();
+
+	});
+	
 	
 	function configDialog(id) {
 		$( id ).dialog({ 
@@ -80,4 +88,49 @@ $(document).ready(function() {
 		$(".ui-dialog-titlebar").hide();
 	});
 	
+	
+	var grauGeralList;
+    var grauCruxList;
+    var grauArtificialList;
+    var grauArtificialLivreList;
+    var grauExposicaoList;
+    var grauDuracaoList;
+    
+    function updateValues() {
+		grauGeralValue.innerHTML = (grauGeral.valueAsNumber == 0) ? "" : grauGeralList[grauGeral.valueAsNumber - 1].representacao;
+		grauCruxValue.innerHTML = (grauCrux.valueAsNumber == 0) ? "": grauCruxList[grauCrux.valueAsNumber - 1].representacao;
+		grauArtificialValue.innerHTML = (grauArtificial.valueAsNumber == 0) ? "" : grauArtificialList[grauArtificial.valueAsNumber - 1].representacao;
+		grauArtificialLivreValue.innerHTML = (grauArtificialLivre.valueAsNumber == 0) ? "" : grauArtificialLivreList[grauArtificialLivre.valueAsNumber - 1].representacao;
+		grauExposicaoValue.innerHTML = (grauExposicao.valueAsNumber == 0) ? "" : grauExposicaoList[grauExposicao.valueAsNumber - 1].representacao;
+		grauDuracaoValue.innerHTML = (grauDuracao.valueAsNumber == 0) ? "" : grauDuracaoList[grauDuracao.valueAsNumber - 1].representacao;
+		
+		grauExposicaoDescription.title = (grauExposicao.valueAsNumber == 0) ? "" : grauExposicaoList[grauExposicao.valueAsNumber - 1].descricao;
+		grauDuracaoDescription.title = (grauDuracao.valueAsNumber == 0) ? "" : grauDuracaoList[grauDuracao.valueAsNumber - 1].descricao;
+	}
+	
+	
+		$.getJSON("json/listagraugeral", function(jsonGrauGeralList) {
+    		grauGeral.max = jsonGrauGeralList.length;
+    		grauGeralList = jsonGrauGeralList;
+		});
+		$.getJSON("json/kamon/listagraucrux", function(jsonGrauCruxList) {
+    		grauCrux.max = jsonGrauCruxList.length;
+    		grauCruxList = jsonGrauCruxList;
+    		grauArtificialLivre.max = jsonGrauCruxList.length;
+    		grauArtificialLivreList = jsonGrauCruxList;
+		});
+    	$.getJSON("json/listagrauartificial", function(jsonGrauArtificialList) {
+    		grauArtificial.max = jsonGrauArtificialList.length;
+    		grauArtificialList = jsonGrauArtificialList;
+		});
+		$.getJSON("json/listagrauexposicao", function(jsonGrauExposicaoList) {
+    		grauExposicao.max = jsonGrauExposicaoList.length;
+    		grauExposicaoList = jsonGrauExposicaoList;
+		});
+		$.getJSON("json/listagrauduracao", function(jsonGrauDuracaoList) {
+    		grauDuracao.max = jsonGrauDuracaoList.length;
+    		grauDuracaoList = jsonGrauDuracaoList;
+		});
+		
+
 });

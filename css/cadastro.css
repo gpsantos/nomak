@@ -9,8 +9,8 @@
 #logo {
     float: left;
 }
-.span6.logoT > img {
-    margin: 2.5% 0 0 4%;
+.span6.logoK > img {
+    margin: 1.5% 0% 1.5% 5%;
    }
    
 #mountain {
@@ -18,7 +18,7 @@
 }
 div.top > img {
     float: left;
-    margin: 6px 10px;
+    margin: 1.5% 2%;
 }
 div.top {
     background-color: #4F6525;
@@ -91,9 +91,9 @@ div#coodBase {
 }
 .textoBase {
     background: none repeat scroll 0 0 #F5F4F0;
-    font: 0.75em trebuchet ms;
-    margin: -9px 0 4px 9px;
-    width: 118px;
+    font: 0.85em trebuchet ms;
+    margin: -2% 0 4% 4%;
+    width: 31%;
 }
 select#anoDaConquista {
     margin: 0 55% 0% 2%;
@@ -116,9 +116,6 @@ div#captcha textarea {
 }
 div#fonte input {
 	width:82%;
-}
-div#basicInfo input, div#basicInfo textarea {
-    width: 95%;
 }
 .labelGraduacao {
     padding: 0;
