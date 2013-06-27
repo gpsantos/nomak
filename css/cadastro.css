@@ -34,7 +34,7 @@ div.boxes {
 }
 .bottom input, div.bottom textarea {
     margin: 0 0 0 8px;
-    width: 67%;
+    width: 55%;
 }
 .bottom {
     padding: 6% 6% 12%;
@@ -47,11 +47,11 @@ div.bottom {
     padding: 3% 5% 1% 0px;
 }
 
-div#leftColumn {
+/*div#leftColumn {
 	min-width:380px;
 }
 div#rightColumn {
-	min-width:380px;
+	min-width:380px;*/
 }
 
 @media (min-width:895px) and (max-width:1066px) {
@@ -85,15 +85,15 @@ ul.tecAscensaoUl {
 
 div#coodBase {
     border: 1px solid #DBD8D3;
-    margin: -10px 0 10px 15px;
-    padding: 0 0 4%;
+    margin: -6px 0 9px 7px;
+    padding: 0 0 0 4%;
     width: 96%;
 }
 .textoBase {
     background: none repeat scroll 0 0 #F5F4F0;
-    font: 0.85em trebuchet ms;
-    margin: -2% 0 4% 4%;
-    width: 31%;
+	font: 0.75em trebuchet ms;
+	margin: -3% 0 4% 4%;
+	width: 41%;
 }
 select#anoDaConquista {
     margin: 0 55% 0% 2%;
@@ -102,9 +102,28 @@ select#anoDaConquista {
 #materialSugeridoQuantidade {
     margin-left: 3%;
 }
-input#materialSugeridoNome {
-	width: 47%;
+
+@media (max-width:360px) {
+	input#materialSugeridoNome {
+		width: 33%;
+	}
 }
+@media (min-width:361px) and (max-width:400px) {
+	input#materialSugeridoNome {
+		width: 40%;
+	}
+}
+@media (min-width:401px) and (max-width:768px) {
+	input#materialSugeridoNome {
+		width: 50%;
+	}
+}
+@media (min-width:769px) {
+	input#materialSugeridoNome {
+		width: 36%;
+	}
+}
+
 div.noBorder {
 	border:0;
 }

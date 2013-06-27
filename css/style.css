@@ -3,6 +3,8 @@
 body {
      background-color:#F5F4F0;
      margin:auto;
+     padding-left: 0px;
+     padding-right: 0px;
 }
 
 .tituloBox {

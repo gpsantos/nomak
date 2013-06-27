@@ -110,8 +110,24 @@ $(document).ready(function() {
     $('#grauGeral').change(function() {
     	grauGeralValue.innerHTML = (grauGeral.valueAsNumber == 0) ? "" : grauGeralList[grauGeral.valueAsNumber - 1].representacao;
     });
+	$('#grauCrux').change(function() {
+    	grauCruxValue.innerHTML = (grauCrux.valueAsNumber == 0) ? "" : grauCruxList[grauCrux.valueAsNumber - 1].representacao;
+    });
+    $('#grauArtificial').change(function() {
+    	grauArtificialValue.innerHTML = (grauArtificial.valueAsNumber == 0) ? "" : grauArtificialList[grauArtificial.valueAsNumber - 1].representacao;
+    });
+    $('#grauArtificialLivre').change(function() {
+    	grauArtificialLivreValue.innerHTML = (grauArtificialLivre.valueAsNumber == 0) ? "" : grauArtificialLivreList[grauArtificialLivre.valueAsNumber - 1].representacao;
+    });
+     $('#grauExposicao').change(function() {
+    	grauExposicaoValue.innerHTML = (grauExposicao.valueAsNumber == 0) ? "" : grauExposicaoList[grauExposicao.valueAsNumber - 1].representacao;
+    });
 	
-	
+    $('#grauDuracao').change(function() {
+    	grauDuracaoValue.innerHTML = (grauDuracao.valueAsNumber == 0) ? "" : grauDuracaoList[grauDuracao.valueAsNumber - 1].representacao;
+    });
+   
+    	
 		$.getJSON("json/listagraugeral.txt", function(jsonGrauGeralList) {
     		grauGeral.max = jsonGrauGeralList.length;
     		grauGeralList = jsonGrauGeralList;
