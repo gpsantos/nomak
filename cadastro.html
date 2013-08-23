@@ -7,13 +7,15 @@
 <!-- Bootstrap -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<link href="css/smoothness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+<!-- <link href="css/smoothness/jquery-ui-1.10.3.custom.css" rel="stylesheet"> -->
+<link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/cadastro.css">
 <link rel="stylesheet" type="text/css" href="css/spinner.css">
 <script src="js/jquery-1.9.1.js"></script>
-<script src="js/jquery-ui-1.10.3.custom.js"></script>
+<!-- <script src="js/jquery-ui-1.10.3.custom.js"></script> -->
 <script src="js/cadastro.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -63,7 +65,7 @@
 						<label class="labelGraduacao labels">Grau geral da via</label>
 						<input class="grau" type="range" id="grauGeral" name="grauGeral" min="0"
 							value="0" max="11">
-						<label id="grauGeralValue">7</label>
+						<label id="grauGeralValue"></label>
 						</li>
 					</ul>
 					<ul class="textoBox">
@@ -71,7 +73,7 @@
 						<label class="labelGraduacao labels">Grau do crux </label>
 						<input class="grau" type="range" id="grauCrux" name="grauCrux" min="0"
 							value="0" max="27">
-						<label id="grauCruxValue"> VIsup</label>
+						<label id="grauCruxValue"></label>
 						</li>
 					</ul>
 					<ul class="textoBox">
@@ -79,7 +81,7 @@
 						<label class="labelGraduacao labels">Grau do artificial</label>
 						<input class="grau" type="range" id="grauArtificial" name="grauArtificial"
 							min="0" value="0" max="10">
-						<label id="grauArtificialValue">A4+</label>
+						<label id="grauArtificialValue"></label>
 						</li>
 					</ul>
 					<ul class="textoBox">
@@ -87,7 +89,7 @@
 						<label class="labelGraduacao labels">Artificial em Livre</label>
 						<input class="grau" type="range" id="grauArtificialLivre"
 							name="grauArtificialLivre" min="0" value="0" max="27">
-						<label id="grauArtificialLivreValue">Xa</label>
+						<label id="grauArtificialLivreValue"></label>
 						</li>
 					</ul>
 					<ul class="textoBox">
@@ -98,7 +100,7 @@
 						<span id="grauExposicaoDescription"
 							title="Vias muito perigosas, com consequÃªncias graves em caso de queda"
 							style="text-decoration: underline;"><label
-							id="grauExposicaoValue">E5</label></span>
+							id="grauExposicaoValue"></label></span>
 						</li>
 					</ul>
 					<ul class="textoBox">
@@ -106,7 +108,7 @@
 						<label class="labelGraduacao labels">Grau de duração</label>
 						<input type="range" id="grauDuracao" name="grauDuracao" min="0"
 							value="0" max="27">
-						<label id="grauDuracaoValue">VIsup</label>
+						<label id="grauDuracaoValue"></label>
 						</li>
 					</ul>
 
@@ -225,7 +227,7 @@
 					<ul class="align-right">
 						<li>
 							<label class="textoBox">Ano da conquista: </label>
-							<input type="date" name="bday" max="1979-12-31"/>
+							<input type="text" name="bday" id="bday" max="2000-12-31"/>
 						</li>
 					</ul>
 					<ul class="align-right">

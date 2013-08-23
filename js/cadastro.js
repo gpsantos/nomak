@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	$(".spinner").spinner();
-
+	$("#bday").datepicker({ dateFormat: "dd/mm/yy" });
+	
 	function loadAutoCompleteFromJSON(urlToAccessJSON, inputId) {
 		$.getJSON(urlToAccessJSON, function(jsonResultList) {
 
