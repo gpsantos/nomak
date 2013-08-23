@@ -20,11 +20,11 @@
 </head>
 <body>
 	<div id="topo" class="row-fluid">
-		<div class="span6 logoT">
+		<div class="span6 logoK">
 			<img id="logo" src="img/logo_avatar.png" alt="" />
 		</div>
 		<div class="span6">
-			<img id="mountain" class="hidden-phone" src="img/dedo_de_deus.png" />
+			<img id="mountain" class="hidden-phone" src="img/dedo_de_deus.png" alt="mountain" />
 		</div>
 	</div>
 	<div class="row-fluid">
@@ -38,22 +38,18 @@
 					<p class="tituloBox">Informações Básicas</p>
 				</div>
 				<div class="bottom">
-					<div class="row-fluid">
-						<div class="textoBox span2 offset1">
-							<label class="pull-right">Nome:</label>
-						</div>
-						<div class="span9">
-							<input type="text" id="nome" name="nome" />
-						</div>
-					</div>
-					<div class="row-fluid">
-						<div class="textoBox span2 offset1">
-							<label>Descrição:</label>
-						</div>
-						<div class="span9">
-							<textarea name="descricao"></textarea>
-						</div>
-					</div>
+					<ul class="align-right">
+					<li>
+						<label class="textoBox">Nome:</label>
+						<input type="text" name="nome">
+					</li>
+					</ul>
+					<ul class="align-right">
+					<li>
+						<label class="textoBox">Descrição:</label>
+						<textarea name="descricao"></textarea>
+					</li>
+					</ul>
 				</div>
 			</div>
 			<div id="graduacao" class="boxes">
@@ -63,30 +59,39 @@
 				</div>
 				<div class="bottom">
 					<ul class="textoBox">
+						<li>
 						<label class="labelGraduacao labels">Grau geral da via</label>
-						<input type="range" id="grauGeral" name="grauGeral" min="0"
+						<input class="grau" type="range" id="grauGeral" name="grauGeral" min="0"
 							value="0" max="11">
 						<label id="grauGeralValue">7</label>
+						</li>
 					</ul>
 					<ul class="textoBox">
+						<li>
 						<label class="labelGraduacao labels">Grau do crux </label>
-						<input type="range" id="grauCrux" name="grauCrux" min="0"
+						<input class="grau" type="range" id="grauCrux" name="grauCrux" min="0"
 							value="0" max="27">
 						<label id="grauCruxValue"> VIsup</label>
+						</li>
 					</ul>
 					<ul class="textoBox">
+						<li>
 						<label class="labelGraduacao labels">Grau do artificial</label>
-						<input type="range" id="grauArtificial" name="grauArtificial"
+						<input class="grau" type="range" id="grauArtificial" name="grauArtificial"
 							min="0" value="0" max="10">
 						<label id="grauArtificialValue">A4+</label>
+						</li>
 					</ul>
 					<ul class="textoBox">
+						<li>
 						<label class="labelGraduacao labels">Artificial em Livre</label>
-						<input type="range" id="grauArtificialLivre"
+						<input class="grau" type="range" id="grauArtificialLivre"
 							name="grauArtificialLivre" min="0" value="0" max="27">
 						<label id="grauArtificialLivreValue">Xa</label>
+						</li>
 					</ul>
 					<ul class="textoBox">
+						<li>
 						<label class="labelGraduacao labels">Grau de exposição</label>
 						<input type="range" id="grauExposicao" name="grauExposicao"
 							min="0" value="0" max="8">
@@ -94,12 +99,15 @@
 							title="Vias muito perigosas, com consequÃªncias graves em caso de queda"
 							style="text-decoration: underline;"><label
 							id="grauExposicaoValue">E5</label></span>
+						</li>
 					</ul>
 					<ul class="textoBox">
+						<li>
 						<label class="labelGraduacao labels">Grau de duração</label>
 						<input type="range" id="grauDuracao" name="grauDuracao" min="0"
 							value="0" max="27">
 						<label id="grauDuracaoValue">VIsup</label>
+						</li>
 					</ul>
 
 					<div id="checkboxSugerido" class="textoBox">
@@ -118,36 +126,50 @@
 
 				<div class="bottom">
 					<ul id="extensao">
+						<li>
 						<p class="textoBox labels">Extensão:</p>
-						<input class="spinner" type="text" />metros
+						<input class="spinner" type="text" /> <span class="textoBox">metros</span> 
+						</li>
 					</ul>
 					<div id="coodBase">
 						<p class="textoBase">Coordenadas da Base</p>
 						<ul>
+						<li>
 							<p class="textoBox labels">Latitude:</p>
 							<input id="latitude" type="text" name="" />
+						</li>
 						</ul>
 						<ul>
+						<li>
 							<p class="textoBox labels">Longetude:</p>
 							<input id="longitude" type="text" name="" />
+						</li>
 						</ul>
 						<ul>
+						<li>
 							<p class="textoBox labels">Altitude:</p>
-							<input class="spinner" type="text" />metros
+							<input class="spinner" type="text" /><span class="textoBox">metros</span>
+						</li>
 						</ul>
 					</div>
 
 					<ul>
+						<li>
 						<p class="textoBox labels">Cidade:</p>
 						<input id="cidade" type="text" name="nome" />
+						</li>
 					</ul>
 					<ul>
+						<li>
 						<p class="textoBox labels">Montanha:</p>
 						<input type="text" name="" />
+						</li>
 					</ul>
 					<ul>
+						<li>
 						<p class="textoBox labels">Face:</p>
 						<input id="faceMontanha" type="text" name="" />
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -159,20 +181,28 @@
 					<p class="tituloBox">Material Sugerido</p>
 				</div>
 				<div class="bottom">
+				
+				<!-- THE DIV BELOW IS A TEMPLATE FOR ADDING NEW FIELDS TO THE SCREEN -->
 					<div id="materialSugeridoTemplate" style='display: none;'>
 						<ul id="materialSugeridoQuantidade">
+						<li>
 							<p class="textoBox labels">Quantidade:</p>
 							<input class="spinner" type="text" />
 							<p class="textoBox labels">Nome:</p>
 							<input type="text" name="nome" id="materialSugeridoNome" />
+						</li>
 						</ul>
 					</div>
+				<!-- THE ABOVE DIV IS A TEMPLATE FOR ADDING NEW FIELDS TO THE SCREEN -->
+
 					<div id="materialSugeridoFields">
 						<ul id="materialSugeridoQuantidade">
+						<li>
 							<p class="textoBox labels">Quantidade:</p>
 							<input class="spinner" type="text" />
 							<p class="textoBox labels">Nome:</p>
 							<input type="text" name="nome" id="materialSugeridoNome" />
+						</li>
 						</ul>
 					</div>
 					<div class="materialButton">
@@ -187,18 +217,22 @@
 				</div>
 				<div class="bottom">
 					<ul class="align-right">
-						<label class="textoBox">Conquistadores:</label>
-						<input type="text" name="nome" />
+						<li>
+							<label class="textoBox">Conquistadores:</label>
+							<input type="text" name="nome" />
+						</li>
 					</ul>
 					<ul class="align-right">
-						<label class="textoBox">Ano da conquista: </label>
-						<select id="anoDaConquista" name="" size="1">
-							<option selected value=""></option>
-						</select>
+						<li>
+							<label class="textoBox">Ano da conquista: </label>
+							<input type="date" name="bday" max="1979-12-31"/>
+						</li>
 					</ul>
 					<ul class="align-right">
-						<label class="textoBox">Clube: </label>
-						<input id="clube" type="text" name="nome" />
+						<li>
+							<label class="textoBox">Clube: </label>
+							<input id="clube" type="text" name="nome" />
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -210,43 +244,53 @@
 				</div>
 				<div class="bottom">
 					<ul class="tecAscensaoUl textoBox">
-						<input type="checkbox" name="agarra" class="tecAscensaoCheckbox" />
-						Agarra
-						<input type="radio" name="predominante" value="">
+						<li>
+							<input type="checkbox" name="agarra" class="tecAscensaoCheckbox" />
+							Agarra
+							<input type="radio" name="predominante" value="">
+						</li>
 					</ul>
 					<ul class="tecAscensaoUl textoBox">
-						<input type="checkbox" name="oposicao" class="tecAscensaoCheckbox" />
-						Oposiçãoo
-						<input type="radio" name="predominante" value="">
+						<li>
+							<input type="checkbox" name="oposicao" class="tecAscensaoCheckbox" />
+							Oposiçãoo
+							<input type="radio" name="predominante" value="">
+						</li>
 					</ul>
 					<ul class="tecAscensaoUl textoBox">
-						<input type="checkbox" name="entalamento"
-							class="tecAscensaoCheckbox" /> Entalamento
-						<input type="radio" name="predominante" value="">
+						<li>
+							<input type="checkbox" name="entalamento"
+								class="tecAscensaoCheckbox" /> Entalamento
+							<input type="radio" name="predominante" value="">
+						</li>
 					</ul>
 					<ul class="tecAscensaoUl textoBox">
-						<input type="checkbox" name="chamine" class="tecAscensaoCheckbox" />
-						Chaminé
-						<input type="radio" name="predominante" value="">
-						</p>
+						<li>
+							<input type="checkbox" name="chamine" class="tecAscensaoCheckbox" />
+							Chaminé
+							<input type="radio" name="predominante" value="">
+						</li>
 					</ul>
 					<ul class="tecAscensaoUl textoBox">
-						<input type="checkbox" name="diedro" class="tecAscensaoCheckbox" />
-						Diedro
-						<input type="radio" name="predominante" value="">
-						</p>
+						<li>
+							<input type="checkbox" name="diedro" class="tecAscensaoCheckbox" />
+							Diedro
+							<input type="radio" name="predominante" value="">
+						</li>
 					</ul>
 					<ul class="tecAscensaoUl textoBox">
-						<input type="checkbox" name="aderencia"
-							class="tecAscensaoCheckbox" /> Aderência
-						<input type="radio" name="predominante" value="">
-						</p>
+						<li>
+							<input type="checkbox" name="aderencia"
+								class="tecAscensaoCheckbox" /> Aderência
+							<input type="radio" name="predominante" value="">
+						</li>
 					</ul>
 					<ul class="tecAscensaoUl textoBox">
-						<input type="checkbox" name="teto" class="tecAscensaoCheckbox" />
-						Teto
-						<input type="radio" name="predominante" value="">
-						</p>
+						<li>
+							<input type="checkbox" name="teto" class="tecAscensaoCheckbox" />
+							Teto
+							<input type="radio" name="predominante" value="">
+						</li>
 					</ul>
 				</div>
 

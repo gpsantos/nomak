@@ -3,11 +3,13 @@
 body {
      background-color:#F5F4F0;
      margin:auto;
+     padding-left: 0px;
+     padding-right: 0px;
 }
 
 .tituloBox {
     color: #ffffff;
-    font: bold 73% trebuchet,arial,sans-serif;
+    font: bold 0.8em trebuchet,arial,sans-serif;
     padding: 2%;
 }
 
