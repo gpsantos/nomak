@@ -1,6 +1,11 @@
 $(document).ready(function() {
 	$(".spinner").spinner();
 	$("#anoConquista").datepicker({ dateFormat: "dd/mm/yy" });
+	$("#anoConquista").blur(function() {
+		if (this.value == ''){
+			this.value = 'dd/mm/yyyy';
+		}
+	})
 	
 	function loadAutoCompleteFromJSON(urlToAccessJSON, inputId) {
 		$.getJSON(urlToAccessJSON, function(jsonResultList) {
