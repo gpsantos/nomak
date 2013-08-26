@@ -1,0 +1,1 @@
+[{"id":1,"sigla":"RJ","nome":"Rio de Janeiro"},{"id":2,"sigla":"SP","nome":"São Paulo"},{"id":3,"sigla":"ES","nome":"Vitória"},{"id":4,"sigla":"BH","nome":"Belo Horizonte"}]
