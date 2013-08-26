@@ -1,0 +1,1 @@
+[{"id":1,"sigla":"N","nome":"Norte"},{"id":2,"sigla":"S","nome":"Sul"},{"id":3,"sigla":"L","nome":"Leste"},{"id":4,"sigla":"O","nome":"Oeste"},{"id":5,"sigla":"NE","nome":"Nordeste"},{"id":6,"sigla":"SE","nome":"Sudeste"},{"id":7,"sigla":"NO","nome":"Noroeste"},{"id":8,"sigla":"SO","nome":"Sudoeste"}]

@@ -1,0 +1,1 @@
+[{"id":1,"representacao":"D1","descricao":"Uma a três horas"},{"id":2,"representacao":"D2","descricao":"Três a quatro horas"},{"id":3,"representacao":"D3","descricao":"Quatro a seis horas"},{"id":4,"representacao":"D4","descricao":"Um dia inteiro"},{"id":5,"representacao":"D5","descricao":"De um a dois dias"},{"id":6,"representacao":"D6","descricao":"Dois ou mais dias"}]

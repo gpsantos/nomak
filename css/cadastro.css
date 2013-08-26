@@ -2,33 +2,39 @@
 #topo {
     background-color: #4F6525;
     background-repeat: repeat-x;
-    height: 126px;
+    vertical-align: middle;
+    position: fixed;
+    z-index: 100000;
 }
 #logo {
     float: left;
 }
+.span6.logoK > img {
+    margin: 1.5% 0% 1.5% 5%;
+   }
+   
 #mountain {
     float: right;
 }
 div.top > img {
     float: left;
-    margin: 0 10px;
+    margin: 1.5% 2%;
 }
 div.top {
     background-color: #4F6525;
     padding: 0%;
     border: 1px solid #4F6525;
 }
+#mainSection {
+	margin-top:100px;
+}
 div.boxes {
     border: 1px solid #DBD8D3;
     margin: 0 0 20px;
-    max-width: 380px;
-    min-width: 100px;
-    width: 380px;
 }
 .bottom input, div.bottom textarea {
     margin: 0 0 0 8px;
-    width: 67%;
+    width: 55%;
 }
 .bottom {
     padding: 6% 6% 12%;
@@ -41,15 +47,23 @@ div.bottom {
     padding: 3% 5% 1% 0px;
 }
 
-div#leftColumn {
-    float: left;
-    padding: 3% 0 0 16%;
+/*div#leftColumn {
+	min-width:380px;
 }
 div#rightColumn {
-    float: right;
-    padding: 3% 16% 0 0;
+	min-width:380px;*/
 }
 
+@media (min-width:895px) and (max-width:1066px) {
+	div#rightColumn {
+		margin-left:17.021%;
+	}
+}
+@media (min-width:768px) and (max-width:894px) {
+	div#rightColumn {
+		margin-left:17.021%;
+	}
+}
 div#dadosGeo p.textoBox {
     width: 22%;
 }
@@ -71,39 +85,57 @@ ul.tecAscensaoUl {
 
 div#coodBase {
     border: 1px solid #DBD8D3;
-    margin: -10px 0 10px 15px;
-    padding: 0 0 4%;
+    margin: -6px 0 9px 7px;
+    padding: 0 0 0 4%;
     width: 96%;
 }
 .textoBase {
     background: none repeat scroll 0 0 #F5F4F0;
-    font: 12px trebuchet ms;
-    margin: -9px 0 4px 9px;
-    width: 118px;
+	font: 0.75em trebuchet ms;
+	margin: -2% 0 4% 4%;
+	width: 36%;
+    padding-left: 3%;
 }
 select#anoDaConquista {
-    margin: 0 55% 0 0;
+    margin: 0 55% 0% 2%;
+    width: 13%;
 }
 #materialSugeridoQuantidade {
+    margin-left: 3%;
 }
-input#materialSugeridoNome {
-	width:44%;
+
+@media (max-width:360px) {
+	input#materialSugeridoNome {
+		width: 33%;
+	}
 }
+@media (min-width:361px) and (max-width:400px) {
+	input#materialSugeridoNome {
+		width: 40%;
+	}
+}
+@media (min-width:401px) and (max-width:768px) {
+	input#materialSugeridoNome {
+		width: 50%;
+	}
+}
+@media (min-width:769px) {
+	input#materialSugeridoNome {
+		width: 36%;
+	}
+}
+
 div.noBorder {
 	border:0;
 }
 div#captcha {
-	text-align:right;
+	text-align:right;ver
 }
 div#captcha textarea {
 	width:50%;
 }
 div#fonte input {
 	width:82%;
-}
-div#basicInfo input, div#basicInfo textarea {
-    vertical-align: top;
-    width: 77%;
 }
 .labelGraduacao {
     padding: 0;
@@ -119,4 +151,41 @@ div#graduacao input {
 #extensao {
     margin-bottom: 7%;
     
+}
+#checkboxSugerido {
+	text-align: right;
+}
+#checkboxSugerido input[type="checkbox"] {
+    width: 17px;
+}
+.align-right {
+    text-align: right;
+}
+input, textarea {
+    color: black;
+    font: 1em trebuchet ms;
+}
+input[type='text'] {
+	height:22px;
+}
+input, textarea {
+    color: black;
+    font-size: 0.8em;
+}
+button[type='submit']{
+	background-image: url('../img/bt_salvar.png');
+	width: 72px;
+	height: 30px;
+	background-repeat: no-repeat;
+	border: none;
+}
+.materialButton {
+    font: bold 1.3em trebuchet ms,sans-serif;
+    text-align: right;
+   }
+.materialButton span {
+	cursor: pointer;
+}
+li {
+    list-style: none;
 }
