@@ -32,9 +32,9 @@ div.boxes {
     border: 1px solid #DBD8D3;
     margin: 0 0 20px;
 }
-.bottom input, div.bottom textarea {
+.bottom input, .bottom select, div.bottom textarea {
     margin: 0 0 0 8px;
-    width: 55%;
+    width: 68%;
 }
 .bottom {
     padding: 6% 6% 12%;
@@ -96,9 +96,9 @@ div#coodBase {
 	width: 36%;
     padding-left: 3%;
 }
-select#anoDaConquista {
-    margin: 0 55% 0% 2%;
-    width: 13%;
+select#anoConquista {
+    margin: 0 39% 0% 2%;
+    width: 30%;
 }
 #materialSugeridoQuantidade {
     margin-left: 3%;
@@ -161,22 +161,20 @@ div#graduacao input {
 .align-right {
     text-align: right;
 }
-input, textarea {
-    color: black;
-    font: 1em trebuchet ms;
-}
 input[type='text'] {
-	height:22px;
+    height:22px;
 }
-input, textarea {
+select, input, textarea {
     color: black;
     font-size: 0.8em;
+    font: 1em trebuchet ms;
 }
 button[type='submit']{
 	background-image: url('../img/bt_salvar.png');
 	width: 72px;
 	height: 30px;
 	background-repeat: no-repeat;
+    background-color: transparent;
 	border: none;
 }
 .materialButton {
