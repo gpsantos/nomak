@@ -1,11 +1,9 @@
 $(document).ready(function() {
 	$(".spinner").spinner();
-	$("#anoConquista").datepicker({ dateFormat: "dd/mm/yy" });
-	$("#anoConquista").blur(function() {
-		if (this.value == ''){
-			this.value = 'dd/mm/yyyy';
-		}
-	})
+
+	for (i = new Date().getFullYear(); i >= 1900; i--) {
+	    $('#anoConquista').append($('<option />').val(i).html(i));
+	}
 	
 	function loadAutoCompleteFromJSON(urlToAccessJSON, inputId) {
 		$.getJSON(urlToAccessJSON, function(jsonResultList) {
