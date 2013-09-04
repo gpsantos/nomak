@@ -31,6 +31,9 @@ div.boxes {
     border: 1px solid #DBD8D3;
     margin: 0 0 20px;
 }
+div.bottom textarea {
+    height: 130px;
+}
 .bottom input, .bottom select, div.bottom textarea {
     margin: 0 0 0 8px;
     width: 68%;
@@ -48,7 +51,6 @@ div.bottom {
 div#dadosGeo p.textoBox {
     width: 22%;
 }
-
 p.textoBox {
     text-align: right;
 }
@@ -80,6 +82,7 @@ div#coodBase {
 select#anoConquista {
     margin: 0 39% 0% 2%;
     width: 29%;
+    font-size: 0.8em;
 }
 #materialSugeridoQuantidade {
     margin-left: 3%;
@@ -107,7 +110,7 @@ div#fonte input {
     text-align: right;
 }
 div#graduacao input {
-    width: 40%;
+    width: 53%;
 }
 #extensao {
     margin-bottom: 7%;
@@ -161,14 +164,26 @@ li {
     input#materialSugeridoNome {
         width: 43%;
     }
-}
+/*    div#graduacao input {
+        width: 53%;
+    }
+*/}
 /*Phone above Portrait*/
 @media (min-width:361px) and (max-width:767px) {
     input#materialSugeridoNome {
         width: 66%;
     }
+    div#basicInfo input, div#basicInfo textarea {
+        width: 85%;
+    }
+    .labelGraduacao {
+        width: 31%;
+    }
+    div#graduacao input {
+        width: 65%;
+    }
 }
-/*Tablet*/
+/*Tablet and Small Desktops*/
 @media (min-width:768px) and (max-width:1199px) {
     div#captcha textarea {
         width:44%;
@@ -189,6 +204,9 @@ li {
     }
     select#anoConquista {
         margin-right: 33%;
+    }
+    div#basicInfo input, div#basicInfo textarea {
+        width: 74%;
     }
 }
 /*Large Desktop*/
