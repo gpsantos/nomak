@@ -100,60 +100,55 @@ $(document).ready(function() {
     var grauExposicaoList;
     var grauDuracaoList;
     
-    function updateValues() {
-		grauCruxValue.innerHTML = (grauCrux.valueAsNumber == 0) ? "": grauCruxList[grauCrux.valueAsNumber - 1].representacao;
-		grauArtificialValue.innerHTML = (grauArtificial.valueAsNumber == 0) ? "" : grauArtificialList[grauArtificial.valueAsNumber - 1].representacao;
-		grauArtificialLivreValue.innerHTML = (grauArtificialLivre.valueAsNumber == 0) ? "" : grauArtificialLivreList[grauArtificialLivre.valueAsNumber - 1].representacao;
-		grauExposicaoValue.innerHTML = (grauExposicao.valueAsNumber == 0) ? "" : grauExposicaoList[grauExposicao.valueAsNumber - 1].representacao;
-		grauDuracaoValue.innerHTML = (grauDuracao.valueAsNumber == 0) ? "" : grauDuracaoList[grauDuracao.valueAsNumber - 1].representacao;
-		
-		grauExposicaoDescription.title = (grauExposicao.valueAsNumber == 0) ? "" : grauExposicaoList[grauExposicao.valueAsNumber - 1].descricao;
-		//grauDuracaoDescription.title = (grauDuracao.valueAsNumber == 0) ? "" : grauDuracaoList[grauDuracao.valueAsNumber - 1].descricao;
-	}
-    
-    $('#grauGeral').change(function() {
+    $('#grauGeral').bind('click keyup', function() {
     	grauGeralValue.innerHTML = (grauGeral.valueAsNumber == 0) ? "" : grauGeralList[grauGeral.valueAsNumber - 1].representacao;
     });
-	$('#grauCrux').change(function() {
+	
+	$('#grauCrux').bind('click keyup', function() {
     	grauCruxValue.innerHTML = (grauCrux.valueAsNumber == 0) ? "" : grauCruxList[grauCrux.valueAsNumber - 1].representacao;
     });
-    $('#grauArtificial').change(function() {
+    
+    $('#grauArtificial').bind('click keyup', function() {
     	grauArtificialValue.innerHTML = (grauArtificial.valueAsNumber == 0) ? "" : grauArtificialList[grauArtificial.valueAsNumber - 1].representacao;
     });
-    $('#grauArtificialLivre').change(function() {
+    
+    $('#grauArtificialLivre').bind('click keyup', function() {
     	grauArtificialLivreValue.innerHTML = (grauArtificialLivre.valueAsNumber == 0) ? "" : grauArtificialLivreList[grauArtificialLivre.valueAsNumber - 1].representacao;
     });
-     $('#grauExposicao').change(function() {
+    
+    $('#grauExposicao').bind('click keyup', function() {
     	grauExposicaoValue.innerHTML = (grauExposicao.valueAsNumber == 0) ? "" : grauExposicaoList[grauExposicao.valueAsNumber - 1].representacao;
+		grauExposicaoValue.title = (grauExposicao.valueAsNumber == 0) ? "" : grauExposicaoList[grauExposicao.valueAsNumber - 1].descricao;
     });
 	
-    $('#grauDuracao').change(function() {
+    $('#grauDuracao').bind('click keyup', function() {
     	grauDuracaoValue.innerHTML = (grauDuracao.valueAsNumber == 0) ? "" : grauDuracaoList[grauDuracao.valueAsNumber - 1].representacao;
+		grauDuracaoValue.title = (grauDuracao.valueAsNumber == 0) ? "" : grauDuracaoList[grauDuracao.valueAsNumber - 1].descricao;
     });
    
     	
-		$.getJSON("json/listagraugeral.txt", function(jsonGrauGeralList) {
-    		grauGeral.max = jsonGrauGeralList.length;
-    		grauGeralList = jsonGrauGeralList;
-		});
-		$.getJSON("json/listagraucrux.txt", function(jsonGrauCruxList) {
-    		grauCrux.max = jsonGrauCruxList.length;
-    		grauCruxList = jsonGrauCruxList;
-    		grauArtificialLivre.max = jsonGrauCruxList.length;
-    		grauArtificialLivreList = jsonGrauCruxList;
-		});
-    	$.getJSON("json/listagrauartificial.txt", function(jsonGrauArtificialList) {
-    		grauArtificial.max = jsonGrauArtificialList.length;
-    		grauArtificialList = jsonGrauArtificialList;
-		});
-		$.getJSON("json/listagrauexposicao.txt", function(jsonGrauExposicaoList) {
-    		grauExposicao.max = jsonGrauExposicaoList.length;
-    		grauExposicaoList = jsonGrauExposicaoList;
-		});
-		$.getJSON("json/listagrauduracao.txt", function(jsonGrauDuracaoList) {
-    		grauDuracao.max = jsonGrauDuracaoList.length;
-    		grauDuracaoList = jsonGrauDuracaoList;
-		});
+	$.getJSON("json/listagraugeral.txt", function(jsonGrauGeralList) {
+   		grauGeral.max = jsonGrauGeralList.length;
+   		grauGeralList = jsonGrauGeralList;
+	});
+	$.getJSON("json/listagraucrux.txt", function(jsonGrauCruxList) {
+   		grauCrux.max = jsonGrauCruxList.length;
+   		grauCruxList = jsonGrauCruxList;
+   		grauArtificialLivre.max = jsonGrauCruxList.length;
+   		grauArtificialLivreList = jsonGrauCruxList;
+	});
+   	$.getJSON("json/listagrauartificial.txt", function(jsonGrauArtificialList) {
+   		grauArtificial.max = jsonGrauArtificialList.length;
+   		grauArtificialList = jsonGrauArtificialList;
+	});
+	$.getJSON("json/listagrauexposicao.txt", function(jsonGrauExposicaoList) {
+   		grauExposicao.max = jsonGrauExposicaoList.length;
+   		grauExposicaoList = jsonGrauExposicaoList;
+	});
+	$.getJSON("json/listagrauduracao.txt", function(jsonGrauDuracaoList) {
+   		grauDuracao.max = jsonGrauDuracaoList.length;
+   		grauDuracaoList = jsonGrauDuracaoList;
+	});
 		
 
 });

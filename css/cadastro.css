@@ -103,14 +103,14 @@ div#fonte input {
 }
 .labelGraduacao {
     padding: 0;
-    width: 38%;
+    width: 40%;
 }
 .labels {
     float: left;
     text-align: right;
 }
 div#graduacao input {
-    width: 53%;
+    width: 50%;
 }
 #extensao {
     margin-bottom: 7%;
@@ -164,10 +164,10 @@ li {
     input#materialSugeridoNome {
         width: 43%;
     }
-/*    div#graduacao input {
-        width: 53%;
+   div#graduacao input {
+        width: 43%;
     }
-*/}
+}
 /*Phone above Portrait*/
 @media (min-width:361px) and (max-width:767px) {
     input#materialSugeridoNome {
@@ -180,7 +180,7 @@ li {
         width: 31%;
     }
     div#graduacao input {
-        width: 65%;
+        width: 58%;
     }
 }
 /*Tablet and Small Desktops*/
