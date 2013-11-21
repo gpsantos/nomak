@@ -1,217 +1,229 @@
 #topo {
-    background-color: #4F6525;
-    background-repeat: repeat-x;
-    vertical-align: middle;
-    position: fixed;
-    z-index: 100000;
+	background-color: #4F6525;
+	background-repeat: repeat-x;
+	vertical-align: middle;
+	position: fixed;
+	z-index: 100000;
 }
 #logo {
-    float: left;
+	float: left;
 }
 .span6.logoK > img {
-    margin: 1.5% 0% 1.5% 5%;
-   }
-   
+	margin: 1.5% 0% 1.5% 5%;
+}
+
 #mountain {
-    float: right;
+	float: right;
 }
 div.top > img {
-    float: left;
-    margin: 1.5% 2%;
+	float: left;
+	margin: 1.5% 2%;
 }
 div.top {
-    background-color: #4F6525;
-    padding: 0%;
-    border: 1px solid #4F6525;
+	background-color: #4F6525;
+	padding: 0%;
+	border: 1px solid #4F6525;
 }
 #mainSection {
-	margin-top:100px;
+	margin-top: 100px;
 }
 div.boxes {
-    border: 1px solid #DBD8D3;
-    margin: 0 0 20px;
+	border: 1px solid #DBD8D3;
+	margin: 0 0 20px;
 }
 div.bottom textarea {
-    height: 130px;
+	height: 130px;
 }
 .bottom input, .bottom select, div.bottom textarea {
-    margin: 0 0 0 8px;
-    width: 68%;
+	margin: 0 0 0 8px;
+	width: 68%;
 }
 .bottom {
-    padding: 6% 6% 12%;
+	padding: 6% 6% 12%;
 }
 .bottom ul {
-    margin: 5px 0 10px;
+	margin: 5px 0 10px;
 }
 
 div.bottom {
-    padding: 3% 5% 1% 0px;
+	padding: 3% 5% 1% 0px;
 }
 div#dadosGeo p.textoBox {
-    width: 22%;
+	width: 22%;
 }
 p.textoBox {
-    text-align: right;
+	text-align: right;
 }
 .bottom input[type="radio"] {
-    width: 15px;
-    float:right;
+	width: 15px;
+	float: right;
 }
 input.tecAscensaoCheckbox {
-    float:left;
-    width: 12%;
+	float: left;
+	width: 12%;
 }
 ul.tecAscensaoUl {
-    padding:0;
+	padding: 0;
 }
 
 div#coodBase {
-    border: 1px solid #DBD8D3;
-    margin: -6px 0 9px 7px;
-    padding: 0 0 0 4%;
-    width: 96%;
+	border: 1px solid #DBD8D3;
+	margin: -6px 0 9px 7px;
+	padding: 0 0 0 4%;
+	width: 96%;
 }
 .textoBase {
-    background: none repeat scroll 0 0 #F5F4F0;
-    font: 0.75em trebuchet ms;
-    margin: -2% 0 4% 4%;
-    width: 36%;
-    padding-left: 3%;
+	background: none repeat scroll 0 0 #F5F4F0;
+	font: 0.75em trebuchet ms;
+	margin: -2% 0 4% 4%;
+	width: 36%;
+	padding-left: 3%;
 }
 select#anoConquista {
-    margin: 0 39% 0% 2%;
-    width: 29%;
-    font-size: 0.8em;
+	margin: 0 39% 0% 2%;
+	width: 29%;
+	font-size: 0.8em;
 }
 #materialSugeridoQuantidade {
-    margin-left: 3%;
+	margin-left: 3%;
 }
-
 
 div.noBorder {
-    border:0;
+	border: 0;
 }
 div#captcha {
-    text-align:right;
+	text-align: right;
 }
 div#captcha textarea {
-    width:50%;
+	width: 50%;
 }
 div#fonte input {
-    width:82%;
+	width: 82%;
 }
 .labelGraduacao {
-    padding: 0;
-    width: 40%;
+	padding: 0;
+	width: 40%;
 }
 .labels {
-    float: left;
-    text-align: right;
+	float: left;
+	text-align: right;
 }
 div#graduacao input {
-    width: 50%;
+	width: 40%;
 }
 #extensao {
-    margin-bottom: 7%;
-    
+	margin-bottom: 7%;
 }
 #checkboxSugerido {
-    text-align: right;
+	text-align: right;
 }
 #checkboxSugerido input[type="checkbox"] {
-    width: 17px;
+	width: 17px;
 }
 .align-right {
-    text-align: right;
+	text-align: right;
 }
 input[type='text'] {
-    height:22px;
+	height: 22px;
 }
 select, input, textarea {
-    color: black;
-    font-size: 0.8em;
-    font: 1em trebuchet ms;
+	color: black;
+	font-size: 0.8em;
+	font: 1em trebuchet ms;
 }
-button[type='submit']{
-    background-image: url('../img/bt_salvar.png');
-    width: 72px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    border: none;
-    margin-right: 5%;
+button[type='submit'] {
+	background-image: url('../img/bt_salvar.png');
+	width: 72px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: none;
+	margin-right: 5%;
 }
 .materialButton {
-    font: bold 1.3em trebuchet ms,sans-serif;
-    text-align: right;
-   }
+	font: bold 1.3em trebuchet ms, sans-serif;
+	text-align: right;
+}
 .materialButton span {
-    cursor: pointer;
+	cursor: pointer;
 }
 li {
-    list-style: none;
+	list-style: none;
 }
-@media (min-width:895px) and (max-width:1066px) {
+@media (min-width: 895px) and (max-width: 1066px) {
 }
-@media (max-width:767px) {
-    div#captcha textarea {
-        margin-right: 5%;
-    }
+@media (max-width: 767px) {
+	div#captcha textarea {
+		margin-right: 5%;
+	}
 }
 /*Phone Portrait*/
-@media (max-width:360px) {
-    input#materialSugeridoNome {
-        width: 43%;
-    }
-   div#graduacao input {
-        width: 43%;
-    }
+@media (max-width: 360px) {
+	input#materialSugeridoNome {
+		width: 37%;
+	}
+	div#graduacao input {
+		width: 43%;
+	}
+
+	select#anoConquista {
+		margin: 0 30% 0% 2%;
+	}
+	.textoBase {
+		width: 44%;
+	}
+	.bottom select {
+		width: 64%;
+	}
+	.conquista_input {
+		width: 58% !important; 
+	}
 }
 /*Phone above Portrait*/
-@media (min-width:361px) and (max-width:767px) {
-    input#materialSugeridoNome {
-        width: 66%;
-    }
-    div#basicInfo input, div#basicInfo textarea {
-        width: 85%;
-    }
-    .labelGraduacao {
-        width: 31%;
-    }
-    div#graduacao input {
-        width: 58%;
-    }
+@media (min-width: 361px) and (max-width: 767px) {
+	input#materialSugeridoNome {
+		width: 66%;
+	}
+	div#basicInfo input, div#basicInfo textarea {
+		width: 85%;
+	}
+	.labelGraduacao {
+		width: 31%;
+	}
+	div#graduacao input {
+		width: 58%;
+	}
+
 }
 /*Tablet and Small Desktops*/
-@media (min-width:768px) and (max-width:1199px) {
-    div#captcha textarea {
-        width:44%;
-    }
-    div#rightColumn {
-        margin-left:8.021%;
-        width: 40%;
-    }
-    div#leftColumn {
-        margin-left:8.021%;
-        width: 40%;
-    }
-    input#materialSugeridoNome {
-        width: 34%;
-    }
-    div#conquista div.bottom input {
-        width: 62%;
-    }
-    select#anoConquista {
-        margin-right: 33%;
-    }
-    div#basicInfo input, div#basicInfo textarea {
-        width: 74%;
-    }
+@media (min-width: 768px) and (max-width: 1199px) {
+	div#captcha textarea {
+		width: 44%;
+	}
+	div#rightColumn {
+		margin-left: 3%;
+		width: 45%;
+	}
+	div#leftColumn {
+		margin-left: 5%;
+		width: 45%;
+	}
+	input#materialSugeridoNome {
+		width: 34%;
+	}
+	div#conquista div.bottom input {
+		width: 62%;
+	}
+	select#anoConquista {
+		margin-right: 33%;
+	}
+	div#basicInfo input, div#basicInfo textarea {
+		width: 74%;
+	}
 }
 /*Large Desktop*/
-@media (min-width:1200px) {
-    input#materialSugeridoNome {
-        width: 47%;
-    }
+@media (min-width: 1200px) {
+	input#materialSugeridoNome {
+		width: 47%;
+	}
 }
