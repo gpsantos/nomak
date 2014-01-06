@@ -100,28 +100,28 @@ $(document).ready(function() {
     var grauExposicaoList;
     var grauDuracaoList;
     
-    $('#grauGeral').bind('click keyup', function() {
+    $('#grauGeral').bind('input', function() {
     	grauGeralValue.innerHTML = (grauGeral.valueAsNumber == 0) ? "" : grauGeralList[grauGeral.valueAsNumber - 1].representacao;
     });
 	
-	$('#grauCrux').bind('click keyup', function() {
+	$('#grauCrux').bind('input', function() {
     	grauCruxValue.innerHTML = (grauCrux.valueAsNumber == 0) ? "" : grauCruxList[grauCrux.valueAsNumber - 1].representacao;
     });
     
-    $('#grauArtificial').bind('click keyup', function() {
+    $('#grauArtificial').bind('input', function() {
     	grauArtificialValue.innerHTML = (grauArtificial.valueAsNumber == 0) ? "" : grauArtificialList[grauArtificial.valueAsNumber - 1].representacao;
     });
     
-    $('#grauArtificialLivre').bind('click keyup', function() {
+    $('#grauArtificialLivre').bind('input', function() {
     	grauArtificialLivreValue.innerHTML = (grauArtificialLivre.valueAsNumber == 0) ? "" : grauArtificialLivreList[grauArtificialLivre.valueAsNumber - 1].representacao;
     });
     
-    $('#grauExposicao').bind('click keyup', function() {
+    $('#grauExposicao').bind('input', function() {
     	grauExposicaoValue.innerHTML = (grauExposicao.valueAsNumber == 0) ? "" : grauExposicaoList[grauExposicao.valueAsNumber - 1].representacao;
 		grauExposicaoValue.title = (grauExposicao.valueAsNumber == 0) ? "" : grauExposicaoList[grauExposicao.valueAsNumber - 1].descricao;
     });
 	
-    $('#grauDuracao').bind('click keyup', function() {
+    $('#grauDuracao').bind('input', function() {
     	grauDuracaoValue.innerHTML = (grauDuracao.valueAsNumber == 0) ? "" : grauDuracaoList[grauDuracao.valueAsNumber - 1].representacao;
 		grauDuracaoValue.title = (grauDuracao.valueAsNumber == 0) ? "" : grauDuracaoList[grauDuracao.valueAsNumber - 1].descricao;
     });
